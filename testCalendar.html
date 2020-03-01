@@ -173,26 +173,33 @@ http://www.templatemo.com/tm-406-flex
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <p> HALLO </p>
         <p> Today's Date</p>
-        <div id = "calendarContainer">
+        <div class="row" id = "calendarContainer">
         </div>
         <script type="text/javascript">
-                    var wrapper = document.createElement("div");
-                    var e = "1";
-                    var wrap = document.createElement("div");
                     const Url = "https://www.googleapis.com/calendar/v3/calendars/l43ijjmq28vt97abnijs443mhc@group.calendar.google.com/events?key=AIzaSyDpllO5R79dXtxGpDPplkoxsG3S64X9Z2M&timeMin=2020-03-01T19:32:10-00:00";
                     $.get(Url, function(data, status){
-                            e = data.valueOf().items[0].summary;
-                            wrapper.innerHTML = "<p>" + e + "</p>";
-                            console.log(data.items);
-                            console.log(status);
-                            console.log(typeof(data));
-                            console.log(typeof(data.valueOf().items[0].summary))
+                            events = data.items;
+                        var calendar_block = document.getElementById('calendarContainer');
+                        for(eventId in events){
+                            name = events[eventId].summary;
+                            console.log(event);
+                            console.log(name);
+                            var wrapper = document.createElement("div");
+                            var image = document.createElement("img");
+                            image.setAttribute("src","images/exec/yuria_utsumi.png");
+                            var wrapper2 = document.createElement("div");
+                            var wrapper3 = document.createElement("div");
+                            wrapper.setAttribute('class','team-member col-md-2 col-sm-4');
+                            wrapper2.setAttribute('class', "member-thumb");
+                            wrapper3.setAttribute('class', "calendar-overlay text-center");
+                            wrapper2.appendChild(image);
+                            wrapper2.appendChild(wrapper3);
+                            wrapper.appendChild(wrapper2);
+                            wrapper3.innerHTML = "<h3>" + name + "</h3>";
+                            calendar_block.appendChild(wrapper);
+                        }
                     });
                     
-                    wrap.innerHTML = "<p> TEST </p>";
-                    var calendar_block = document.getElementById('calendarContainer');
-                    calendar_block.appendChild(wrapper);
-                    calendar_block.appendChild(wrap);
             </script>
 
         <div class="content-section" id="our-team">
