@@ -300,9 +300,10 @@ a.text-icon {
 }
 
 .logo-wrapper {
-  background: url(../images/logo.png) no-repeat;
   height: 100px;
-  background-position: 15px;
+  background: url(images/new-logo.png) no-repeat 15px;
+  background-size: contain;
+  background-origin: content-box;
 }
 .logo-wrapper a {
   display: inline-block;
