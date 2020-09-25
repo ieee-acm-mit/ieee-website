@@ -734,6 +734,8 @@ a.text-icon {
   -moz-border-radius: 50%;
 }
 .team-member .member-thumb img {
+  object-fit: contain;
+  height: 100%;
   width: 100%;
 }
 .team-member .member-thumb .team-overlay {
