@@ -301,7 +301,7 @@ a.text-icon {
 
 .logo-wrapper {
   height: 100px;
-  background: url(images/new-logo.png) no-repeat 15px;
+  background: url(images/new-logo.png) no-repeat 10px;
   background-size: contain;
   background-origin: content-box;
 }
@@ -909,3 +909,9 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
    	font-style: normal;
 }
 */
+
+#test{
+  height: 200px;
+  width: auto;
+  margin: 20px auto;
+}
