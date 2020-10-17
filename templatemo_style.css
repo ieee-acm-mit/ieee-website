@@ -301,7 +301,7 @@ a.text-icon {
 
 .logo-wrapper {
   height: 100px;
-  background: url(images/new-logo.png) no-repeat 10px;
+  background: url(images/logo_w_background.png) no-repeat 10px;
   background-size: contain;
   background-origin: content-box;
 }
