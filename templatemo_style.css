@@ -785,6 +785,8 @@ a.text-icon {
 }
 
 .calendar-overlay{
+  margin: 5px;
+  min-height: 100px;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -795,6 +797,11 @@ a.text-icon {
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+}
+
+#calendarContainer{
+  display: flex;
+  flex-direction: column;
 }
 
 .team-member .member-thumb .calendar-overlay h3 {
