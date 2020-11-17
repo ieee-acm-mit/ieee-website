@@ -181,32 +181,6 @@ http://www.templatemo.com/tm-406-flex
                             <iframe src="https://calendar.google.com/calendar/embed?title=MIT%20IEEE%2FACM%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                         </div>
                         <div class="row" id = "calendarContainer">
-                        <script type="text/javascript">
-                            const today = new Date();
-                            const URL = "https://www.googleapis.com/calendar/v3/calendars/l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com/events?timeMin=2020-09-01T10%3A00%3A00-07%3A00&key=AIzaSyDpllO5R79dXtxGpDPplkoxsG3S64X9Z2M";
-                            $.get(URL, function(data, status){
-                                const events = data.items;
-                                let calendar_block = document.getElementById('calendarContainer');
-                                for(eventId in events){
-                                    let name = events[eventId].summary;
-                                    console.log(name);
-                                    var wrapper = document.createElement("div");
-                                    var image = document.createElement("img");
-                                    image.setAttribute("src","images/exec/generic_profile_pic.jpg");
-                                    var wrapper2 = document.createElement("div");
-                                    var wrapper3 = document.createElement("div");
-                                    wrapper.setAttribute('class','team-member col-md-2 col-sm-4');
-                                    wrapper2.setAttribute('class', "member-thumb");
-                                    wrapper3.setAttribute('class', "calendar-overlay text-center");
-                                    wrapper2.appendChild(image);
-                                    wrapper2.appendChild(wrapper3);
-                                    wrapper.appendChild(wrapper2);
-                                    wrapper3.innerHTML = "<h3>" + name + "</h3>";
-                                    calendar_block.appendChild(wrapper);
-                                }
-                               console.log(`${data}`);
-                            });
-                        </script>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
 
@@ -544,9 +518,11 @@ http://www.templatemo.com/tm-406-flex
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /#footer -->
-        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/calendar.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
