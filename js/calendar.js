@@ -11,14 +11,18 @@ jQuery(document).ready(function($) {
         for(eventId in events){
             const name = events[eventId].summary;
             const desc = events[eventId].description;
+            const link = events[eventId].htmlLink;
             console.log(name);
-            console.log(desc);
             let wrapper = document.createElement("div");
+            let wrapper2 = document.createElement("div");
             let image = document.createElement("img");
             image.setAttribute("src","images/exec/generic_profile_pic.jpg");
-            wrapper.setAttribute('class', "calendar-event text-center");
-            wrapper.innerHTML = "<h3>" + name + "</h3>";
+            image.setAttribute('class', "calendar-event-img portfolio-thumb");
+            wrapper.setAttribute('class', 'calendar-event');
+            wrapper2.setAttribute('class', "calendar-event text-center portfolio-overlay");
+            wrapper2.innerHTML = "<h3>" + name + "</h3>" + "<p>" + desc + "</p>";
             wrapper.appendChild(image);
+            wrapper.appendChild(wrapper2);
             calendar_block.appendChild(wrapper);
         }
        console.log(`${data}`);

@@ -742,7 +742,7 @@ a.text-icon {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-.team-member .member-thumb img {
+.team-member .member-thumb .calendar-event-img img {
   object-fit: contain;
   height: 100%;
   width: 100%;
@@ -797,12 +797,14 @@ a.text-icon {
   color: white;
   opacity: 1;
   visibility: visible;
+  padding:20px;
 }
 
 #calendarContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-bottom:  80px;
 }
 
 .team-member .member-thumb .calendar-overlay .calendar-event h3 {
