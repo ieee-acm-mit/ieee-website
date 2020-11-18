@@ -14,10 +14,11 @@ jQuery(document).ready(function($) {
             console.log(name);
             console.log(desc);
             let wrapper = document.createElement("div");
-            // var image = document.createElement("img");
-            // image.setAttribute("src","images/exec/generic_profile_pic.jpg");
-            wrapper.setAttribute('class', "calendar-overlay text-center");
+            let image = document.createElement("img");
+            image.setAttribute("src","images/exec/generic_profile_pic.jpg");
+            wrapper.setAttribute('class', "calendar-event text-center");
             wrapper.innerHTML = "<h3>" + name + "</h3>";
+            wrapper.appendChild(image);
             calendar_block.appendChild(wrapper);
         }
        console.log(`${data}`);

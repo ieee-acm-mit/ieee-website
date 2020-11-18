@@ -805,7 +805,7 @@ a.text-icon {
   justify-content: space-evenly;
 }
 
-.team-member .member-thumb .calendar-overlay h3 {
+.team-member .member-thumb .calendar-overlay .calendar-event h3 {
   font-size: 18px;
   text-transform: uppercase;
   color: white;
