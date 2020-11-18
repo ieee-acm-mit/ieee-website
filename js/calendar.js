@@ -10,19 +10,22 @@ jQuery(document).ready(function($) {
         let calendar_block = document.getElementById('calendarContainer');
         for(eventId in events){
             const name = events[eventId].summary;
-            let desc = events[eventId].description;
+            const desc = events[eventId].description;
             const link = events[eventId].htmlLink;
             let wrapper = document.createElement("div");
-            let overlay = document.createElement("a");
+            let overlay = document.createElement("div");
             let final = document.createElement("div");
             let image = document.createElement("img");
+            let linkArrow = document.createElement("a");
+            let arrow = document.createElement("i");
+            linkArrow.setAttribute("src", link);
+            arrow.setAttribute("class", "fa fa-external-link-square-alt");
             final.setAttribute('class', 'portfolio-item');
             image.setAttribute("src","images/exec/generic_profile_pic.jpg");
             image.setAttribute('class', "portfolio-thumb");
             wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
-            overlay.setAttribute("src", link);
             overlay.setAttribute('class', "text-center portfolio-overlay");
-            overlay.innerHTML = "<h3>" + name + "</h3>" + "<p>" + desc + "</p>";
+            overlay.innerHTML = "<h3>" + name + "</h3>";
             wrapper.appendChild(image);
             wrapper.appendChild(overlay);
             final.appendChild(wrapper);
