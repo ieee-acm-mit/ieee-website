@@ -18,7 +18,8 @@ jQuery(document).ready(function($) {
             let image = document.createElement("img");
             let linkArrow = document.createElement("a");
             let arrow = document.createElement("i");
-            linkArrow.setAttribute("src", link);
+            linkArrow.setAttribute("href", link);
+            linkArrow.setAttribute("class", "expand");
             arrow.setAttribute("class", "fa fa-external-link-square-alt");
             final.setAttribute('class', 'portfolio-item');
             image.setAttribute("src","images/exec/generic_profile_pic.jpg");
@@ -26,6 +27,8 @@ jQuery(document).ready(function($) {
             wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
             overlay.setAttribute('class', "text-center portfolio-overlay");
             overlay.innerHTML = "<h3>" + name + "</h3>";
+            linkArrow.appendChild(arrow);
+            overlay.appendChild(linkArrow);
             wrapper.appendChild(image);
             wrapper.appendChild(overlay);
             final.appendChild(wrapper);
