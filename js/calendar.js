@@ -12,14 +12,14 @@ jQuery(document).ready(function($) {
         let calendar_block = document.getElementById('calendarContainer');
         for(eventId in events){
             const name = events[eventId].summary;
-            const desc = events[eventId].description;
+            // const desc = events[eventId].description;
             const link = events[eventId].htmlLink;
             const dateTime = events[eventId].start.dateTime; //2020-11-19T21:00:00-05:00 format
-            // const time = dateTime.substring(11,13) + ":" + dateTime.substring(14,16);
             const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)) - 1,
                 parseInt(dateTime.substring(8,10)), parseInt(dateTime.substring(11,13)), parseInt(dateTime.substring(14,16)), 0));
             const startString = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-            // const startString = `${MONTHS[dateTime.substring(5,7)]} ${dateTime.substring(8,10)}, ${dateTime.substring(0,4)}` + " at " + time + "EST/EDT";
+            const imageLink = (events[eventId].attachments != null) ? events[eventId].attachments[0].fileUrl : 'images/exec/generic_profile_pic.jpg';
+            console.log(events[eventId].attachments);
             let wrapper = document.createElement("div");
             let overlay = document.createElement("div");
             let final = document.createElement("div");
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
             linkArrow.setAttribute("class", "expand");
             arrow.setAttribute("class", "fa fa-external-link-square-alt");
             final.setAttribute('class', 'portfolio-item');
-            image.setAttribute("src","images/exec/generic_profile_pic.jpg");
+            image.setAttribute("src", imageLink);
             image.setAttribute('class', "portfolio-thumb");
             wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
             overlay.setAttribute('class', "text-center portfolio-overlay");
