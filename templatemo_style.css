@@ -455,7 +455,14 @@ a.text-icon {
 }
 .portfolio-item .portfolio-thumb .portfolio-overlay p {
   font-size: 11px;
+  color: white;
 }
+
+.portfolio-item .portfolio-thumb .portfolio-overlay a {
+  font-size: 11px;
+  color: white;
+}
+
 .portfolio-item .portfolio-thumb .portfolio-overlay a.expand {
   margin-top: 15px;
   width: 36px;

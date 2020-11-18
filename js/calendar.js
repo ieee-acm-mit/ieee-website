@@ -10,21 +10,21 @@ jQuery(document).ready(function($) {
         let calendar_block = document.getElementById('calendarContainer');
         for(eventId in events){
             const name = events[eventId].summary;
-            const desc = events[eventId].description;
+            let desc = events[eventId].description;
             const link = events[eventId].htmlLink;
-            console.log(name);
             let wrapper = document.createElement("div");
-            let wrapper2 = document.createElement("div");
+            let overlay = document.createElement("a");
             let final = document.createElement("div");
             let image = document.createElement("img");
             final.setAttribute('class', 'portfolio-item');
             image.setAttribute("src","images/exec/generic_profile_pic.jpg");
             image.setAttribute('class', "portfolio-thumb");
             wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
-            wrapper2.setAttribute('class', "text-center portfolio-overlay");
-            wrapper2.innerHTML = "<h3>" + name + "</h3>" + "<p>" + desc + "</p>";
+            overlay.setAttribute("src", link);
+            overlay.setAttribute('class', "text-center portfolio-overlay");
+            overlay.innerHTML = "<h3>" + name + "</h3>" + "<p>" + desc + "</p>";
             wrapper.appendChild(image);
-            wrapper.appendChild(wrapper2);
+            wrapper.appendChild(overlay);
             final.appendChild(wrapper);
             calendar_block.appendChild(final);
         }
