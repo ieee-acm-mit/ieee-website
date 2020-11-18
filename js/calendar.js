@@ -1,4 +1,6 @@
 const API_KEY = 'AIzaSyDpllO5R79dXtxGpDPplkoxsG3S64X9Z2M';
+const MONTHS = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August",
+9: "September", 10: "October", 11:"November", 12: "December"};
 
 jQuery(document).ready(function($) {
     const today = new Date();
@@ -12,6 +14,12 @@ jQuery(document).ready(function($) {
             const name = events[eventId].summary;
             const desc = events[eventId].description;
             const link = events[eventId].htmlLink;
+            const dateTime = events[eventId].start.dateTime; //2020-11-19T21:00:00-05:00 format
+            // const time = dateTime.substring(11,13) + ":" + dateTime.substring(14,16);
+            const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)),
+                parseInt(dateTime.substring(8,10)), parseInt(dateTime.substring(11,13)), parseInt(dateTime.substring(14,16))));
+            const startString = date.toLocaleDateString('en-US');
+            // const startString = `${MONTHS[dateTime.substring(5,7)]} ${dateTime.substring(8,10)}, ${dateTime.substring(0,4)}` + " at " + time + "EST/EDT";
             let wrapper = document.createElement("div");
             let overlay = document.createElement("div");
             let final = document.createElement("div");
@@ -26,7 +34,7 @@ jQuery(document).ready(function($) {
             image.setAttribute('class', "portfolio-thumb");
             wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
             overlay.setAttribute('class', "text-center portfolio-overlay");
-            overlay.innerHTML = "<h3>" + name + "</h3>";
+            overlay.innerHTML = "<h3>" + name + "</h3>" + "<p>" + startString +"</p>";
             linkArrow.appendChild(arrow);
             overlay.appendChild(linkArrow);
             wrapper.appendChild(image);
