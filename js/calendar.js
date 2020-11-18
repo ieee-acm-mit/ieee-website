@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
             const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)) - 1,
                 parseInt(dateTime.substring(8,10)), parseInt(dateTime.substring(11,13)), parseInt(dateTime.substring(14,16)), 0));
             const startString = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-            const imageLink = (events[eventId].attachments != null) ? events[eventId].attachments[0].fileUrl : 'images/exec/generic_profile_pic.jpg';
+            const imageLink = (events[eventId].attachments != null) ? "https://drive.google.com/uc?export=view&id=" + events[eventId].attachments[0].fileId : 'images/exec/generic_profile_pic.jpg';
             console.log(events[eventId].attachments);
             let wrapper = document.createElement("div");
             let overlay = document.createElement("div");
