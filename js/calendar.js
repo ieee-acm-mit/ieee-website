@@ -15,15 +15,18 @@ jQuery(document).ready(function($) {
             console.log(name);
             let wrapper = document.createElement("div");
             let wrapper2 = document.createElement("div");
+            let final = document.createElement("div");
             let image = document.createElement("img");
+            final.setAttribute('class', 'portfolio-item');
             image.setAttribute("src","images/exec/generic_profile_pic.jpg");
-            image.setAttribute('class', "calendar-event-img portfolio-thumb");
-            wrapper.setAttribute('class', 'calendar-event');
-            wrapper2.setAttribute('class', "calendar-event text-center portfolio-overlay");
+            image.setAttribute('class', "portfolio-thumb");
+            wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
+            wrapper2.setAttribute('class', "text-center portfolio-overlay");
             wrapper2.innerHTML = "<h3>" + name + "</h3>" + "<p>" + desc + "</p>";
             wrapper.appendChild(image);
             wrapper.appendChild(wrapper2);
-            calendar_block.appendChild(wrapper);
+            final.appendChild(wrapper);
+            calendar_block.appendChild(final);
         }
        console.log(`${data}`);
     });
