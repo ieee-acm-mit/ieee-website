@@ -742,7 +742,7 @@ a.text-icon {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-.team-member .member-thumb .calendar-event-img img {
+.team-member .member-thumb img {
   object-fit: contain;
   height: 100%;
   width: 100%;
