@@ -16,11 +16,9 @@ jQuery(document).ready(function($) {
             const link = events[eventId].htmlLink;
             const dateTime = events[eventId].start.dateTime; //2020-11-19T21:00:00-05:00 format
             // const time = dateTime.substring(11,13) + ":" + dateTime.substring(14,16);
-            const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)),
+            const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)) - 1,
                 parseInt(dateTime.substring(8,10)), parseInt(dateTime.substring(11,13)), parseInt(dateTime.substring(14,16)), 0));
-            console.log(parseInt(dateTime.substring(5,7)));
-            const startString = date.toLocaleDateString('en-US');
-            console.log(startString);
+            const startString = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
             // const startString = `${MONTHS[dateTime.substring(5,7)]} ${dateTime.substring(8,10)}, ${dateTime.substring(0,4)}` + " at " + time + "EST/EDT";
             let wrapper = document.createElement("div");
             let overlay = document.createElement("div");
