@@ -9,6 +9,8 @@ jQuery(document).ready(function($) {
 
     $.get(URL, function(data, status){
         const events = data.items;
+        console.log(events);
+        console.log(events.length);
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
             for(eventId in events){
@@ -44,6 +46,7 @@ jQuery(document).ready(function($) {
                 calendar_block.appendChild(final);
             }
         }else{
+
             calendar_block.innerHTML = "<p>There are no upcoming events at the moment</p>";
         }
 
