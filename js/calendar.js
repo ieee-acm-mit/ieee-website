@@ -1,16 +1,15 @@
-const API_KEY = 'AIzaSyDpllO5R79dXtxGpDPplkoxsG3S64X9Z2M';
+const API_KEY = config.apiKey;
 const MONTHS = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August",
 9: "September", 10: "October", 11:"November", 12: "December"};
 
 jQuery(document).ready(function($) {
+    console.log(API_KEY);
     const today = new Date();
     const timeMin = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
     const URL = `https://www.googleapis.com/calendar/v3/calendars/l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com/events?timeMin=${timeMin}T10%3A00%3A00-07%3A00&key=${API_KEY}`;
 
     $.get(URL, function(data, status){
         const events = data.items;
-        console.log(events);
-        console.log(events.length);
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
             for(eventId in events){
@@ -46,7 +45,6 @@ jQuery(document).ready(function($) {
                 calendar_block.appendChild(final);
             }
         }else{
-
             calendar_block.innerHTML = "<p>There are no upcoming events at the moment</p>";
         }
 
