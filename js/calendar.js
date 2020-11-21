@@ -10,37 +10,43 @@ jQuery(document).ready(function($) {
     $.get(URL, function(data, status){
         const events = data.items;
         let calendar_block = document.getElementById('calendarContainer');
-        for(eventId in events){
-            const name = events[eventId].summary;
-            // const desc = events[eventId].description;
-            const link = events[eventId].htmlLink;
-            const dateTime = events[eventId].start.dateTime; //2020-11-19T21:00:00-05:00 format
-            const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)) - 1,
-                parseInt(dateTime.substring(8,10)), parseInt(dateTime.substring(11,13)), parseInt(dateTime.substring(14,16)), 0));
-            const startString = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-            const imageLink = (events[eventId].attachments != null) ? "https://drive.google.com/uc?export=view&id=" + events[eventId].attachments[0].fileId : 'images/exec/generic_profile_pic.jpg';
-            console.log(events[eventId].attachments);
-            let wrapper = document.createElement("div");
-            let overlay = document.createElement("div");
-            let final = document.createElement("div");
-            let image = document.createElement("img");
-            let linkArrow = document.createElement("a");
-            let arrow = document.createElement("i");
-            linkArrow.setAttribute("href", link);
-            linkArrow.setAttribute("class", "expand");
-            arrow.setAttribute("class", "fa fa-external-link-square-alt");
-            final.setAttribute('class', 'portfolio-item');
-            image.setAttribute("src", imageLink);
-            image.setAttribute('class', "portfolio-thumb");
-            wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
-            overlay.setAttribute('class', "text-center portfolio-overlay");
-            overlay.innerHTML = "<h3>" + name + "</h3>" + "<p>" + startString +"</p>";
-            linkArrow.appendChild(arrow);
-            overlay.appendChild(linkArrow);
-            wrapper.appendChild(image);
-            wrapper.appendChild(overlay);
-            final.appendChild(wrapper);
-            calendar_block.appendChild(final);
+        if (events.length != 0){
+            for(eventId in events){
+                const name = events[eventId].summary;
+                // const desc = events[eventId].description;
+                const link = events[eventId].htmlLink;
+                const dateTime = events[eventId].start.dateTime; //2020-11-19T21:00:00-05:00 format
+                const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)) - 1,
+                    parseInt(dateTime.substring(8,10)), parseInt(dateTime.substring(11,13)), parseInt(dateTime.substring(14,16)), 0));
+                const startString = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+                const imageLink = (events[eventId].attachments != null) ? "https://drive.google.com/uc?export=view&id=" + events[eventId].attachments[0].fileId : 'images/exec/generic_profile_pic.jpg';
+                console.log(events[eventId].attachments);
+                let wrapper = document.createElement("div");
+                let overlay = document.createElement("div");
+                let final = document.createElement("div");
+                let image = document.createElement("img");
+                let linkArrow = document.createElement("a");
+                let arrow = document.createElement("i");
+                linkArrow.setAttribute("href", link);
+                linkArrow.setAttribute("class", "expand");
+                arrow.setAttribute("class", "fa fa-external-link-square-alt");
+                final.setAttribute('class', 'portfolio-item');
+                image.setAttribute("src", imageLink);
+                image.setAttribute('class', "portfolio-thumb");
+                wrapper.setAttribute('class', 'calendar-event portfolio-thumb');
+                overlay.setAttribute('class', "text-center portfolio-overlay");
+                overlay.innerHTML = "<h3>" + name + "</h3>" + "<p>" + startString +"</p>";
+                linkArrow.appendChild(arrow);
+                overlay.appendChild(linkArrow);
+                wrapper.appendChild(image);
+                wrapper.appendChild(overlay);
+                final.appendChild(wrapper);
+                calendar_block.appendChild(final);
+            }
+        }else{
+            calendar_block.innerHTML = "<p>There are no upcoming events at the moment</p>";
         }
+
+
     });
 });
