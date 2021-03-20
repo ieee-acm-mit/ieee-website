@@ -1,10 +1,9 @@
-import data from '../secrets.json';
+import data from '../secrets.js';
 const MONTHS = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August",
 9: "September", 10: "October", 11:"November", 12: "December"};
 
 jQuery(document).ready(function($) {
     const API_KEY = data.API_KEY;
-    console.log(API_KEY);
     const today = new Date();
     const timeMin = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
     const URL = `https://www.googleapis.com/calendar/v3/calendars/l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com/events?timeMin=${timeMin}T10%3A00%3A00-07%3A00&key=${API_KEY}`;
