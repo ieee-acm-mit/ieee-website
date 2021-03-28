@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
         const events = data.items;
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
-            for(eventId in events){
+            for(let eventId = 0; eventId < events.length; eventId++){
                 const name = events[eventId].summary;
                 // const desc = events[eventId].description;
                 const link = events[eventId].htmlLink;
