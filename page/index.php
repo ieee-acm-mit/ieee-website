@@ -13,8 +13,10 @@
 <p>
 <?php
  if (@$_SERVER['SSL_CLIENT_S_DN_CN']) {
+ $parts = explode('@', $_SERVER['SSL_CLIENT_S_DN_Email']);
+ $user = $parts[0];
   echo 'Welcome, <b>' . $_SERVER['SSL_CLIENT_S_DN_CN'] . '</b>.<br>'
-      . 'A certificate for <b>' . $_SERVER['SSL_CLIENT_S_DN_Email'] . '</b>'
+      . 'A certificate for <b>' . $user . '</b>'
       . ', issued by the <b>' . $_SERVER['SSL_CLIENT_I_DN_O']
       . '</b>, is correctly installed on your browser.<br>'
       . 'Your certificate will expire on ' . $_SERVER['SSL_CLIENT_V_END'] . '.';
@@ -32,6 +34,17 @@
      . ').<br><pre>';
  system('/sbin/ifconfig eth0');
  print '</pre>';
+?>
+<?php
+ $csvFile = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vSMkgV9ZcEuokH-P_CLKHNI8rSDO0PDfRZ3O9X9fqfIW7-HlUPcHhv0sG0iG3Fwvr3M5AqoAXPLwAaw/pub?output=csv');
+ $count = 0;
+foreach ($csvFile as $line) {
+	$data = str_getcsv($line);
+	if ($data[0] == $user){
+		$count++;
+	}
+}
+echo 'You have, <b>'.$count.'</b> events';
 ?>
 </body>
 </html>
