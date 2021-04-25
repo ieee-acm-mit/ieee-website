@@ -1,12 +1,12 @@
 <html>
 <head>
 <title>MIT IEEE Event Tracker</title>
-<link rel="stylesheet" href="../css/tracker.css">
+<?php include 'header.php'; ?>
+<style>
+<?php include '../css/tracker.css'; ?>
+</style>
 </head>
 <body>
-<h1>Browser Detection</h1>
-<p>
-</p>
 <h1>Event Tracker</h1>
 <p>
 <?php
@@ -28,7 +28,7 @@
 foreach ($csvFile as $line) {
 	$data = str_getcsv($line);
 	if ($data[0] == $user){
-	    echo '<li>' . $data[0] . '</li>';
+	    echo '<li>' . implode(",", $data) . '</li>';
 		$count++;
 	}
 }
