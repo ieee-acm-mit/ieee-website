@@ -14,13 +14,13 @@
  $parts = explode('@', $_SERVER['SSL_CLIENT_S_DN_Email']);
  $user = $parts[0];
   echo 'Hello <b>' . $_SERVER['SSL_CLIENT_S_DN_CN'] . '</b>!<br>'
-      . 'A certificate for <b>' . $user . '</b>';
+      . 'Kerb:<b>' . $user . '</b>';
  } else {
   ?>No certificate has been detected. Please ensure you are accessing
   <a href="https://geofft.scripts.mit.edu:444/detect.php">http<b>s</b>://geofft.scripts.mit.edu<b>:444</b>/detect.php</a>.<?php } ?>
 </p>
-<h1>Server Detection</h1>
-<p>
+<table>
+<tr><th>Events</tr>
 <?php
  $csvFile = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vSMkgV9ZcEuokH-P_CLKHNI8rSDO0PDfRZ3O9X9fqfIW7-HlUPcHhv0sG0iG3Fwvr3M5AqoAXPLwAaw/pub?output=csv');
  $count = 0;
@@ -28,11 +28,12 @@
 foreach ($csvFile as $line) {
 	$data = str_getcsv($line);
 	if ($data[0] == $user){
-	    echo '<li>' . implode(",", $data) . '</li>';
+	    echo '<tr>' . implode(",", $data) . '</tr>';
 		$count++;
 	}
 }
-echo 'You have, <b>'.$count.'</b> events';
+echo 'You have attended <b>'.$count.'</b> events this semester.';
 ?>
+</table>
 </body>
 </html>
