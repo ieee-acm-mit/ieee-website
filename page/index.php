@@ -3,14 +3,23 @@
 <title>MIT IEEE Event Tracker</title>
 <?php include 'header.php'; ?>
 <style>
+<?php include '../css/bootstrap.min.css'; ?>
 <?php include '../templatemo_style.css'; ?>
 <?php include '../css/tracker.css'; ?>
 </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo-wrapper">
-            <h1><a href="../">MIT IEEE/ACM</a></h1>
+    <div class="main-header">
+        <div class="container">
+            <div id="menu-wrapper">
+                <div class="row">
+                    <div class="logo-wrapper col-md-2 col-sm-2">
+                        <h1>
+                            <a href="../">MIT&nbspIEEE/ACM</a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <h2> EVENT TRACKER </h2>

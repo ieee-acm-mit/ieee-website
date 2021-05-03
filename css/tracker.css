@@ -8,7 +8,7 @@ body{
 }
 
 table{
-    margin: auto;
+    margin: 1em auto;
     border: 1px solid #666666;
 }
 
@@ -20,6 +20,14 @@ tr, td, th{
 h1{
     font-size: 28px;
     color: #ec523f;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #444444;
+    display: inline-block;
 }
 
 a {
@@ -34,6 +42,25 @@ a:hover {
   text-decoration: none;
 }
 
+/* From bootstrap */
+@media screen and (min-width: 1200px) {
+    .header{
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
 .logo-wrapper {
   height: 100px;
   background: url(../images/logo_w_background.png) no-repeat 10px;
@@ -43,7 +70,6 @@ a:hover {
 .logo-wrapper a {
   display: inline-block;
   overflow: hidden;
-  padding-left: 100px;
   line-height: 100px;
   text-transform: uppercase;
   color: #ec523f;
