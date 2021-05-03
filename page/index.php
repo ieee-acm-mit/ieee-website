@@ -15,18 +15,13 @@
                 <div class="row">
                     <div class="logo-wrapper col-md-2 col-sm-2">
                         <h1>
-                            <a href="#">MIT&nbspIEEE/ACM</a>
+                            <a href="../">MIT&nbspIEEE/ACM</a>
                         </h1>
                     </div> <!-- /.logo-wrapper -->
                     <div class="col-md-10 col-sm-10 main-menu text-right">
                         <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
                         <ul class="menu-first">
                             <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#committees">Subcommittees</a></li>
-                            <li><a href="#calendar">Calendar</a></li>
-                            <li><a href="#our-team">Team</a></li>
-                            <li><a href="#newsletter">Newsletter</a></li>
-                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,13 +50,13 @@
 
 foreach ($csvFile as $line) {
 	$data = str_getcsv($line);
-	if ($data[0] == $user){
-	    echo '<tr>' . implode(",", $data) . '</tr>';
+	if ($data[0] == $user){ ?>
+	    <tr> <?php implode(",", $data) ?></tr>
+<?php
 		$count++;
 	}
-}
-echo 'You have attended <b>'.$count.'</b> events this semester.';
-?>
+} />
 </table>
+<p> You have attended <b><?php $count ?></b> events this semester.</p>
 </body>
 </html>
