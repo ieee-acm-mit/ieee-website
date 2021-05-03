@@ -3,7 +3,6 @@
 <title>MIT IEEE Event Tracker</title>
 <?php include 'header.php'; ?>
 <style>
-<?php include '../templatemo_style.css'; ?>
 <?php include '../css/tracker.css'; ?>
 </style>
 </head>
