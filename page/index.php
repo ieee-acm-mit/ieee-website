@@ -3,8 +3,12 @@
 <title>MIT IEEE Event Tracker</title>
 <?php include 'header.php'; ?>
 <style>
-<?php include '../templatemo_style.css'; ?>
+//<?php include '../templatemo_style.css'; ?>
 <?php include '../css/tracker.css'; ?>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/animate.css">
+<link rel="stylesheet" href="../css/templatemo_misc.css">
+<link rel="stylesheet" href="../templatemo_style.css">
 </style>
 </head>
 <body>
@@ -14,14 +18,12 @@
             <div id="menu-wrapper">
                 <div class="row">
                     <div class="logo-wrapper col-md-2 col-sm-2">
-                        <h1>
-                            <a href="../">MIT&nbspIEEE/ACM</a>
+                        <h1>MIT&nbspIEEE/ACM Event Tracker
                         </h1>
-                    </div> <!-- /.logo-wrapper -->
+                    </div>
                     <div class="col-md-10 col-sm-10 main-menu text-right">
-                        <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
                         <ul class="menu-first">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="../">Return to home</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,7 +32,6 @@
     </div>
 </div>
 
-<h1>Event Tracker</h1>
 <p>
 <?php
  if (@$_SERVER['SSL_CLIENT_S_DN_CN']) {
@@ -39,8 +40,9 @@
   echo 'Hello <b>' . $_SERVER['SSL_CLIENT_S_DN_CN'] . '</b>!<br>'
       . 'Kerb:<b>' . $user . '</b>';
  } else {
-  ?>No certificate has been detected. Please ensure you are accessing
-  <a href="https://geofft.scripts.mit.edu:444/detect.php">http<b>s</b>://geofft.scripts.mit.edu<b>:444</b>/detect.php</a>.<?php } ?>
+  echo 'No certificate has been detected.';
+ }
+?>
 </p>
 <table>
 <tr><th>Events</th></tr>
@@ -50,13 +52,16 @@
 
 foreach ($csvFile as $line) {
 	$data = str_getcsv($line);
-	if ($data[0] == $user){ ?>
-	    <tr> <?php implode(",", $data) ?></tr>
+	if ($data[0] == $user){
+?>
+	    <tr>
+	        <td> <?php echo data[1]; ?></td>
+        </tr>
 <?php
 		$count++;
 	}
-} />
+} ?>
 </table>
-<p> You have attended <b><?php $count ?></b> events this semester.</p>
+<p> You have attended <b><?php echo $count; ?></b> events this semester.</p>
 </body>
 </html>

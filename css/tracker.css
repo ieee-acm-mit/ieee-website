@@ -3,8 +3,14 @@ body{
     font-size: .83em;
     line-height: 1.75;
     text-align: center;
+    color: #666666;
+    text-rendering: optimizeLegibility;
 }
 
 li{
     color: orange;
+}
+
+table{
+    margin: auto;
 }
