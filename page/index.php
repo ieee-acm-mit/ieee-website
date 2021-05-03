@@ -15,6 +15,7 @@
             </h1>
         </div>
     </div>
+    <br>
     <h2> EVENT TRACKER </h2>
     <p>
         <?php
