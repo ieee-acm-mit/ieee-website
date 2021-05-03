@@ -3,7 +3,7 @@
 <title>MIT IEEE Event Tracker</title>
 <?php include 'header.php'; ?>
 <style>
-//<?php include '../templatemo_style.css'; ?>
+<?php include '../templatemo_style.css'; ?>
 <?php include '../css/tracker.css'; ?>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/animate.css">
@@ -55,7 +55,7 @@ foreach ($csvFile as $line) {
 	if ($data[0] == $user){
 ?>
 	    <tr>
-	        <td> <?php echo data[1]; ?></td>
+	        <td> <?php echo $data[1]; ?></td>
         </tr>
 <?php
 		$count++;
