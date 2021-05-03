@@ -7,10 +7,54 @@ body{
     text-rendering: optimizeLegibility;
 }
 
-li{
-    color: orange;
-}
-
 table{
     margin: auto;
+    border: 1px solid #666666;
+}
+
+tr, td, th{
+    border: 1px solid #666666;
+    padding: 1em;
+}
+
+h1{
+    font-size: 28px;
+    color: #ec523f;
+}
+
+a {
+  color: #ec523f;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  height: 100px;
+  background: url(../images/logo_w_background.png) no-repeat 10px;
+  background-size: contain;
+  background-origin: content-box;
+}
+.logo-wrapper a {
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 100px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: #ec523f;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header {
+  background-color: white;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
 }
