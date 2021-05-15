@@ -38,8 +38,7 @@
 
         foreach ($csvFile as $line) {
             $data = str_getcsv($line);
-            echo $data[0];
-            if ($data[0] == $_SERVER['SSL_CLIENT_S_DN_Email']){
+            if (strtolower($data[0]) == strtolower($_SERVER['SSL_CLIENT_S_DN_Email'])){
         ?>
                 <tr>
                     <td> <?php echo $data[1]; ?></td>
