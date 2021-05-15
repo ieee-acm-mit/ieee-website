@@ -24,7 +24,7 @@
          $parts = explode('@', $_SERVER['SSL_CLIENT_S_DN_Email']);
          $user = $parts[0];
           echo 'Hello <b>' . $_SERVER['SSL_CLIENT_S_DN_CN'] . '</b>!<br>'
-              . 'Kerb:<b>' . $user . '</b>';
+              . 'email:<b>' . $_SERVER['SSL_CLIENT_S_DN_Email'] . '</b>';
          } else {
           echo 'No certificate has been detected.';
          }
@@ -38,6 +38,7 @@
 
         foreach ($csvFile as $line) {
             $data = str_getcsv($line);
+            echo $data[0];
             if ($data[0] == $_SERVER['SSL_CLIENT_S_DN_Email']){
         ?>
                 <tr>
