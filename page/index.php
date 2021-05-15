@@ -33,12 +33,12 @@
     <table>
         <tr><th>Events You Attended</th></tr>
         <?php
-         $csvFile = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vSMkgV9ZcEuokH-P_CLKHNI8rSDO0PDfRZ3O9X9fqfIW7-HlUPcHhv0sG0iG3Fwvr3M5AqoAXPLwAaw/pub?output=csv');
+         $csvFile = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6rNmKAsXaj3bCmQ-jnlQVeCOs_2Xra0saHRWXEmAn8-n1pT6b57yLugKJ1fMM5wbPPP-b3AQWOMhQ/pub?gid=960057585&single=true&output=csv');
          $count = 0;
 
         foreach ($csvFile as $line) {
             $data = str_getcsv($line);
-            if ($data[0] == $user){
+            if ($data[0] == $_SERVER['SSL_CLIENT_S_DN_Email']){
         ?>
                 <tr>
                     <td> <?php echo $data[1]; ?></td>
