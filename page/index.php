@@ -49,5 +49,6 @@
         } ?>
     </table>
     <p> You have attended <b><?php echo $count; ?></b> events this semester.</p>
+    <p> You qualify for the <b><?php echo $count >= 7 ? 'GOLD' : ($count >= 5 ? 'SILVER' : ($count >= 2 ? 'BRONZE' : 'N/A')); ?></b> swag bundle.</p>
 </body>
 </html>
