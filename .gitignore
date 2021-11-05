@@ -1,2 +1,5 @@
 .idea
 secrets.json
+
+# Ignore Mac system files
+.DS_stores
