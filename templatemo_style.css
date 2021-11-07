@@ -751,8 +751,9 @@ a.text-icon {
 }
 .team-member .member-thumb img {
   object-fit: contain;
-  height: 100%;
   width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 .team-member .member-thumb .team-overlay {
   position: absolute;

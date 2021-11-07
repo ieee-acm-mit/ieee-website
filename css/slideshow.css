@@ -4,7 +4,7 @@
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
-    position: relative;
+    position:relative;
   }
   
   /* Hide the images by default */
@@ -28,7 +28,7 @@
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 35px;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
@@ -36,14 +36,14 @@
   
   /* Position the "next button" to the right */
   .next {
-    right: 0;
+    right: 15px;
     border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
-    background-color: #d9534f;
+    background-color: #ec523f;
   }
   
   /* Number text (1/3 etc) */
@@ -58,7 +58,7 @@
   /* Container for image text */
   .caption-container {
     text-align: center;
-    background-color: #d9534f;
+    background-color: #ec523f;
     padding: 20px 16px;
     color: white;
   }
