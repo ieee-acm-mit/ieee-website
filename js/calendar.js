@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     const URL = `https://www.googleapis.com/calendar/v3/calendars/l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com/events?timeMin=${timeMin}T10%3A00%3A00-07%3A00&key=${API_KEY}`;
 
     $.get(URL, function(data, status){
-        const events = data.items.sort((a, b) => a.start.dateTime - b.start.dateTime);
+        const events = data.items;
         console.log(events)
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
