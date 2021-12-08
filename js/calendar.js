@@ -9,7 +9,8 @@ jQuery(document).ready(function($) {
     const URL = `https://www.googleapis.com/calendar/v3/calendars/l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com/events?timeMin=${timeMin}T10%3A00%3A00-07%3A00&key=${API_KEY}`;
 
     $.get(URL, function(data, status){
-        const events = data.items;
+        const events = data.items.sort((a, b) => a.start.dateTime - b.start.dateTime);
+        console.log(events)
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
             for(let eventId = 0; eventId < events.length; eventId++){
@@ -20,7 +21,7 @@ jQuery(document).ready(function($) {
                 const date = new Date(Date.UTC(parseInt(dateTime.substring(0,4)), parseInt(dateTime.substring(5,7)) - 1,
                     parseInt(dateTime.substring(8,10)), parseInt(dateTime.substring(11,13)), parseInt(dateTime.substring(14,16)), 0));
                 const startString = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-                const imageLink = (events[eventId].attachments != null) ? "https://drive.google.com/uc?export=view&id=" + events[eventId].attachments[0].fileId : 'images/exec/generic_profile_pic.jpg';
+                const imageLink = (events[eventId].attachments != null) ? "https://drive.google.com/uc?export=view&id=" + events[eventId].attachments[0].fileId : 'images/exec/timthebeaver.png';
                 console.log(events[eventId].attachments);
                 let wrapper = document.createElement("div");
                 let overlay = document.createElement("div");
