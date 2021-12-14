@@ -33,7 +33,12 @@
     user-select: none;
     -webkit-user-select: none;
   }
-  
+
+  /* Position the "prev button" to the left */
+  .prev{
+    left: 15px;
+  }
+
   /* Position the "next button" to the right */
   .next {
     right: 15px;
