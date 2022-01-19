@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     $.get(URL, function(data, status){
         const events = data.items;
         console.log(events)
-        events.sort((a,b)=>{return events[a].start.dateTime - events[b].start.dateTime})
+        events.sort((a,b)=>{return a.start.dateTime - b.start.dateTime})
         console.log(events)
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
