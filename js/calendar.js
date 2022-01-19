@@ -10,9 +10,7 @@ jQuery(document).ready(function($) {
 
     $.get(URL, function(data, status){
         const events = data.items;
-        console.log(events)
         events.sort((a,b)=>{return new Date(a.start.dateTime) - new Date(b.start.dateTime)})
-        console.log(events)
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
             for(let eventId = 0; eventId < events.length; eventId++){
