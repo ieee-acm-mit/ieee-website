@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
         //     return firstDate - secondDate
         // })
         console.log(events)
-        first = events[0].start.dateTime
+        const first = events[0].start.dateTime
         console.log(first)
         console.log(new Date(Date.UTC(parseInt(first.substring(0,4)), parseInt(first.substring(5,7)) - 1,
              parseInt(first.substring(8,10)), parseInt(first.substring(11,13)), parseInt(first.substring(14,16)), 0)));
