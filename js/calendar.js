@@ -22,10 +22,10 @@ jQuery(document).ready(function($) {
         console.log(events)
         const first = events[0].start.dateTime
         const second = events[1].start.dateTime 
-        console.log(first > second)
+        console.log(first < second)
         let firstDate = new Date(first);
         let secondDate = new Date(second); 
-        console.log(firstDate > secondDate)
+        console.log(firstDate < secondDate)
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
             for(let eventId = 0; eventId < events.length; eventId++){
