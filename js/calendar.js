@@ -10,7 +10,16 @@ jQuery(document).ready(function($) {
 
     $.get(URL, function(data, status){
         const events = data.items;
-        console.log(events.sort((a,b)=>{return a.start.dateTime - b.start.dateTime}))
+        events.sort((a,b)=>{
+            first = events[a].start.dateTime;
+            firstDate = new Date(Date.UTC(parseInt(first.substring(0,4)), parseInt(first.substring(5,7)) - 1,
+            parseInt(first.substring(8,10)), parseInt(first.substring(11,13)), parseInt(first.substring(14,16)), 0));
+            second = events[b].start.dateTime; 
+            secondDate = new Date(Date.UTC(parseInt(second.substring(0,4)), parseInt(second.substring(5,7)) - 1,
+            parseInt(second.substring(8,10)), parseInt(second.substring(11,13)), parseInt(second.substring(14,16)), 0)); 
+            return firstDate - secondDate
+        })
+        console.log(events)
         let calendar_block = document.getElementById('calendarContainer');
         if (events.length != 0){
             for(let eventId = 0; eventId < events.length; eventId++){
