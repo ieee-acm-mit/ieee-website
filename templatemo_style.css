@@ -509,7 +509,7 @@ a.text-icon {
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .logo-wrapper { 
     background-size: contain;     
   }
