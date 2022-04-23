@@ -6,7 +6,87 @@ http://www.templatemo.com/tm-406-flex
 
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,11 +99,11 @@ body {
 }
 
 .blue {
-	color: #06C;
+  color: #06c;
 }
 
 .green {
-	color: #090;
+  color: #090;
 }
 
 ol,
@@ -38,7 +118,7 @@ q {
 
 blockquote:before,
 blockquote:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -96,11 +176,11 @@ sup {
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 img {
@@ -156,7 +236,7 @@ textarea {
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: .83em;
+  font-size: 0.83em;
   line-height: 1.75;
   color: #666666;
   background-color: white;
@@ -176,18 +256,25 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", Arial, sans-serif;
   color: #444444;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: center;
 }
@@ -349,10 +436,10 @@ a.text-icon {
   text-align: center;
   line-height: 36px;
   font-size: 14px;
-  background: #EC523F;
+  background: #ec523f;
   display: inline-block;
   color: white;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /*.menu-responsive {
@@ -482,7 +569,7 @@ a.text-icon {
   visibility: visible;
 }
 
-.newsletter-overlay{
+.newsletter-overlay {
   border-radius: 1rem;
 }
 
@@ -510,10 +597,10 @@ a.text-icon {
   }
 }
 @media screen and (max-width: 1200px) {
-  .logo-wrapper { 
-    background-size: contain;     
+  .logo-wrapper {
+    background-size: contain;
   }
-  .logo-wrapper{
+  .logo-wrapper {
     height: 50px;
   }
   .logo-wrapper a {
@@ -529,7 +616,7 @@ a.text-icon {
   }
   .menu-first.show {
     /*opacity: 1;*/
-    /*height: auto;  */  
+    /*height: auto;  */
     margin-top: 10px;
     display: block;
     /*transition: opacity 1s, height 0;*/
@@ -537,43 +624,44 @@ a.text-icon {
   .menu-first {
     float: right;
     overflow: auto;
-    width: 100%;  
-    display: none;  
-    /*opacity: 1;  */  
-    /*height: 0;  */  
+    width: 100%;
+    display: none;
+    /*opacity: 1;  */
+    /*height: 0;  */
     /*background: rgba(50, 50, 50, 0.88);*/
     /*transition: opacity 1s, height 0 1s; */
     /*transition: all 0.3s ease;    */
   }
   .main-menu ul li a {
     line-height: 40px;
-    padding-top: 10px;   
+    padding-top: 10px;
   }
   .main-menu ul li.active a {
     border-top: none;
   }
-  .main-menu ul li:last-child { margin-right: 20px; }
+  .main-menu ul li:last-child {
+    margin-right: 20px;
+  }
 
   .flexslider .slider-caption {
     top: 180px;
     opacity: 1;
   }
   .portfolio-item .portfolio-thumb .portfolio-overlay p {
-  font-size: 17px;
+    font-size: 17px;
   }
   .portfolio-item .portfolio-thumb .portfolio-overlay h3 {
-  font-size: 25px;
+    font-size: 25px;
   }
   .flexslider .slider-caption p {
-  font-size: 10px;
+    font-size: 10px;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .formatting-fix {
     margin-bottom: 0px;
   }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -599,13 +687,12 @@ a.text-icon {
     top: 50px;
   }
   .portfolio-item .portfolio-thumb .portfolio-overlay p {
-  font-size: 25px;
+    font-size: 25px;
   }
   .portfolio-item .portfolio-thumb .portfolio-overlay h3 {
-  font-size: 37px;
+    font-size: 37px;
   }
 }
-
 
 @media screen and (max-height: 500px) {
   .menu-first.show {
@@ -660,11 +747,11 @@ a.text-icon {
 }
 
 .service-item a {
-	color: #ffff66;
+  color: #ffff66;
 }
 
 .service-item a:hover {
-	color: black;
+  color: black;
 }
 
 .service-item .service-icon {
@@ -721,21 +808,19 @@ a.text-icon {
   background-color: #2ecc71;
 }
 
-
-.responsive-cal{
-  position: relative; 
-  padding-bottom: 75%; 
-  height: 0; 
-  overflow: 
-  hidden;
-  margin-top: 20px
+.responsive-cal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
 }
- 
+
 .responsive-cal iframe {
-  position: absolute; 
-  top:0; 
-  left: 0; 
-  width: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
 }
 
@@ -752,7 +837,6 @@ a.text-icon {
 .team-member .member-thumb img {
   object-fit: contain;
   width: 100%;
-  max-width: 400px;
   height: auto;
 }
 .team-member .member-thumb .team-overlay {
@@ -773,7 +857,7 @@ a.text-icon {
   -moz-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-.team-member .member-thumb .calendar-overlay{
+.team-member .member-thumb .calendar-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -792,7 +876,7 @@ a.text-icon {
   transition: all 200ms ease-in-out;
 }
 
-.calendar-event{
+.calendar-event {
   margin: 5px;
   min-height: 100px;
   border-radius: 20px;
@@ -805,10 +889,10 @@ a.text-icon {
   color: white;
   opacity: 1;
   visibility: visible;
-  padding:20px;
+  padding: 20px;
 }
 
-#calendarContainer{
+#calendarContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -861,7 +945,7 @@ a.text-icon {
   visibility: visible;
 }
 
-.group-photo{
+.group-photo {
   width: 70%;
   /*height: 70%;*/
   align-self: center;
@@ -951,7 +1035,7 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
 }
 */
 
-#test{
+#test {
   height: 200px;
   width: auto;
   margin: 20px auto;
