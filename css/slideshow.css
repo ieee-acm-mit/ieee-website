@@ -74,10 +74,10 @@
   clear: both;
 }
 
-/* Eight columns side by side */
+/* Ten columns side by side */
 .column {
   float: left;
-  width: 12.5%;
+  width: 10%;
 }
 
 /* Add a transparency effect for thumnbail images */
