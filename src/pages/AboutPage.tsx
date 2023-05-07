@@ -1,11 +1,13 @@
 import React from 'react';
-
+import EventsShowcase from '../components/EventsShowcase';
 
 const AboutPage: React.FC = () => {
   return (
     <div>
-      <h2>About me</h2>
-      <p>I am a web developer.</p>
+      <div>
+
+      </div>
+      <EventsShowcase />
     </div>
   );
 };

@@ -2,7 +2,6 @@ import 'react-slideshow-image/dist/styles.css'
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 
-
 const spanStyle = {
   padding: '20px',
   background: '#efefef',
