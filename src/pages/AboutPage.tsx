@@ -1,10 +1,7 @@
 import React from 'react';
 
-interface PageProps {
-  showContent: boolean;
-}
 
-const AboutPage: React.FC<PageProps> = ({ showContent }) => {
+const AboutPage: React.FC = () => {
   return (
     <div>
       <h2>About me</h2>
