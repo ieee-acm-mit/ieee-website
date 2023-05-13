@@ -1,6 +1,6 @@
 import React from 'react';
 import Slideshow from '../components/ImageSlider';
-import "./HomePage.css";
+import "../css/HomePage.css";
 
 const HomePage: React.FC = () => {
 
@@ -12,41 +12,25 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="homepage-container">
-      <div>
-                  The MIT IEEE/ACM Club represents the student branch for two
-                    professional international organizations, the Institute of
-                    Electrical and Electronics Engineers (IEEE) and the
-                    Association for Computing Machinery (ACM). <br /><br />
-                    Our mission is to create and support a tight-knit community
-                    among the students and faculty in the Department of
-                    Electrical Engineering and Computer Science (EECS) at MIT.
+        
+        <div className='py-2'>
+          MIT IEEE/ACM is the student branch for the Institute of Electrical and Electronics Engineers (IEEE) and the Association for Computing Machinery (ACM). We hope to cultivate a tight-knit community for EECS students at MIT.
+        </div>
+        <div className='button button-primary py-2 my-2'>
+          <a
+            target="_blank"
+            href="newsletter/Newsletter_ November 2022.pdf"
+            className="text-icon"
+            ><b>Our Most Recent Newsletter</b></a>
+        </div>
+        <div className='button button-primary py-2'>
+          <a target="_blank" href="https://groups.mit.edu/webmoira/list/ieee-acm-interest" 
+          className="text-icon"><b>Join Our Mailing list</b></a>
+        </div> 
 
-      </div>
-      <div>
-      Our chapter consists of an executive board dedicated to
-                    making sure you feel welcome. We prioritize your engagement
-                    by connecting freshmen to upperclassmen, undergraduates to
-                    faculty, and applicants to prospective internships.<br /><br />
-                    Get involved with all things course 6 and beyond by coming
-                    to our events! You'll meet students who are just as
-                    passionate as you are in the diverse color spectrum that is
-                    course 6 as well as professors and leaders in the field.
-
-      </div>
-      <div>
-      We host events all throughout the year and our highlights
-                    include:
-                    <br /><br />
-                    Discover Course 6 <br />
-                    Big-Little Events <br />
-                    Study Breaks and Game Nights <br />
-                    Pset Parties <br />
-                    Fireside Chats with Professors <br />
-                    Tech Talks with Industry Professionals <br />
-      </div>
-      <div style={sliderStyle}> 
+      {/* <div style={sliderStyle}> 
         <Slideshow />
-      </div>
+      </div> */}
     </div>
   );
 };
