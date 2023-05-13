@@ -1,4 +1,5 @@
 import React from 'react';
+import "../css/team.css";
 
 const TeamPage: React.FC = () => {
   return (
