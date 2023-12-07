@@ -541,7 +541,7 @@ a.text-icon {
   border-bottom: 1px solid white;
 }
 .portfolio-item .portfolio-thumb .portfolio-overlay p {
-  font-size: 11px;
+  font-size: 12px;
   color: white;
 }
 
@@ -595,8 +595,6 @@ a.text-icon {
   .main-menu ul li:last-child {
     margin-right: 30px;
   }
-}
-@media screen and (max-width: 1200px) {
   .logo-wrapper {
     background-size: contain;
   }
@@ -647,14 +645,16 @@ a.text-icon {
     top: 180px;
     opacity: 1;
   }
-  .portfolio-item .portfolio-thumb .portfolio-overlay p {
-    font-size: 17px;
-  }
-  .portfolio-item .portfolio-thumb .portfolio-overlay h3 {
-    font-size: 25px;
-  }
   .flexslider .slider-caption p {
     font-size: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-item .portfolio-thumb .portfolio-overlay p {
+    font-size: 15px;
+  }
+  .portfolio-item .portfolio-thumb .portfolio-overlay h3 {
+    font-size: 21px;
   }
 }
 
@@ -687,10 +687,10 @@ a.text-icon {
     top: 50px;
   }
   .portfolio-item .portfolio-thumb .portfolio-overlay p {
-    font-size: 25px;
+    font-size: 13px;
   }
   .portfolio-item .portfolio-thumb .portfolio-overlay h3 {
-    font-size: 37px;
+    font-size: 18px;
   }
 }
 
