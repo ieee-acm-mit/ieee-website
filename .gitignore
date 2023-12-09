@@ -2,4 +2,5 @@
 secrets.json
 
 # Ignore Mac system files
+.DS_Store
 .DS_stores
