@@ -1,8 +1,42 @@
-/* Slideshow.css */
-.slide-container {
+/* ImageSlider.css */
+
+.slider-content {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-  }
+    justify-content: center;
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}
   
+.slider-content .caption {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+  
+.slider-content .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.55);
+}
+  
+.slider-content .caption h1 {
+    display: inline-block;
+    color: white;
+    font-size: 36px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.slider-content .caption p {
+    max-width: 760px;
+}
