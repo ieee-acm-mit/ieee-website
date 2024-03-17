@@ -1,0 +1,106 @@
+.portfolio-item {
+    width: 25%;
+    min-width: 110px;
+    max-width: 145px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item .portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item .portfolio-thumb img {
+    width: 100%;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay {
+    background-color: #ec523f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.newsletter-overlay {
+    border-radius: 1rem;
+}
+
+.newsletter-text {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 8px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay p {
+    font-size: 12px;
+    color: white;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay a {
+    font-size: 26px;
+    color: white;
+}
+
+@media screen and (min-width: 500px) {
+    .portfolio-item .portfolio-thumb .portfolio-overlay h3 {
+        font-size: 20px;
+    }
+
+    .portfolio-item .portfolio-thumb .portfolio-overlay p {
+        font-size: 15px;
+    }
+
+    .portfolio-item .portfolio-thumb .portfolio-overlay a {
+        font-size: 32px;
+    }
+
+    .newsletter-text {
+        font-size: 22px;
+    }
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay a.expand {
+    margin-top: 15px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay a.expand i {
+    line-height: 36px;
+}
+
+.portfolio-item .portfolio-thumb:hover .portfolio-overlay {
+    opacity: 1;
+    visibility: visible;
+}
