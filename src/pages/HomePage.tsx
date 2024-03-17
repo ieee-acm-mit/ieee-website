@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
           <button className='button button-primary py-2 my-2'>
             <a
               target="_blank"
-              href="newsletter/Newsletter_ November 2022.pdf"
+              href="newsletter/newsletter-november-23.html"
               className="text-icon w-100"
               ><b>Our Most Recent Newsletter</b></a>
           </button>
