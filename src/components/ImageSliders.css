@@ -1,0 +1,87 @@
+/* ImageSliders.css */
+/* Styling for the two image sliders: <EventShowcase> and <Slideshow> */
+
+/* ------ For Slideshow ------ */
+
+.slider-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 75vh;
+  background-position: center;
+}
+
+.slider-content .caption {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 0 5rem;
+  max-width: 600px;
+}
+
+.slider-content .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.slider-content .caption h1 {
+  display: inline-block;
+  color: white;
+  font-size: 36px;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+/* ------ For EventShowcase ------ */
+
+.eventsc-content {
+  height: 60vh;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.eventsc-container .caption {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--main-theme-color);
+  padding: 13px 0;
+  margin: 0 !important;
+  color: white;
+}
+
+/* Used by react-slideshow-image */
+.eventsc-container .indicators {
+  padding: 0;
+  margin: 0 !important;
+}
+
+.eventsc-container .indicator {
+  opacity: 0.6;
+  cursor: pointer;
+  max-width: 10%;
+}
+
+.eventsc-container .arrow {
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.eventsc-container .indicator.active, .eventsc-container .indicator:hover {
+  opacity: 1;
+}

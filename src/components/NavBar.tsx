@@ -1,12 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import '../css/NavBar.css';
-// import "../../css/animate.css";
-// import "../../css/bootstrap.min.css";
-// import "../../css/font-awesome.css";
-// import "../../css/sdivdeshow.css";
-// import "../../css/tracker.css";
-// import "../../css/templatemo_misc.css";
-// import mitLogo from './path/to/mit-logo.png'; // Replace with the correct path to your MIT logo image
+import "../../css/bootstrap.min.css";
+import "../../css/tracker.css";
+import Logo from '../../images/logo_w_background.png';
 
 export function NavBar() {
   return (
