@@ -12,14 +12,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
-    "react-slideshow-image": "^4.2.1"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.32.3",
+    "react-slideshow-image": "^4.2.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.3"
   }
 }
