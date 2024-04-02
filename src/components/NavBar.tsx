@@ -9,7 +9,7 @@ export function NavBar() {
 
     <div className="navbar">
         <div className="navbar-left">
-          <img src="../../images/logo_w_background.png" className="navbar-logo"/>
+          <img src={Logo} className="navbar-logo" />
           <div>
             MIT IEEE/ACM
           </div>
@@ -30,19 +30,19 @@ export function NavBar() {
             <div>
               <a
                 href="https://www.facebook.com/Ieeeacmmit/"
-                className="fab fa-facebook"
+                className="fa-brands fa-facebook"
               ></a>
             </div>
             <div>
               <a
                 href="https://www.instagram.com/mit_ieee_acm/"
-                className="fab fa-instagram"
+                className="fa-brands fa-instagram"
               ></a>
             </div>
             <div>
               <a
                 href="https://medium.com/mit-ieee"
-                className="fab fa-medium"
+                className="fa-brands fa-medium"
               ></a>
             </div>
         </div>
