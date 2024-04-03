@@ -5,33 +5,57 @@ import "./ImageSliders.css";
 // Default event slides. Slide on Home Page includes three additional images.
 export const eventSlides = [
   {
-    url: 'images/slideshow/s1.JPG',
-    caption: 'Discover Course 6!'
+    url: 'images/events/tesla.jpg',
+    caption: 'Networking event with Tesla'
   },
   {
-    url: 'images/slideshow/s3.jpg',
-    caption: 'IEEE UPP Presentation!'
-  },
-  {
-    url: 'images/slideshow/s4.jpg',
-    caption: 'Intel Coffee Chat!'
-  },
-  {
-    url: 'images/slideshow/s5.jpg',
-    caption: 'Dinner with Professor Hal Abelson!'
-  },
-  {
-    url: 'images/slideshow/s6.jpg',
-    caption: 'Big Little Mixer!'
-  },
-  {
-    url: 'images/slideshow/s7.jpg',
+    url: 'images/events/break2.JPG',
     caption: 'Cookies and Cocoa Study Break!'
   },
   {
-    url: 'images/slideshow/s9.jpg',
-    caption: 'Dinner with Dr Joe Steinmeyer!'
+    url: 'images/events/Leslie-Kaelbling.jpeg',
+    caption: 'Dinner with Professor Leslie Kaelbling!'
+  },
+  {
+    url: 'images/events/URTC-2023.jpeg',
+    caption: 'MIT IEEE Undergrad Research Tech Conference 2023'
+  },
+  {
+    url: 'images/events/Tom-Leighton.jpeg',
+    caption: 'On Life @ MIT and Akamai with Professor Tom Leighton'
+  },
+  // {
+  //   url: 'images/events/break1.jpg',
+  //   caption: "Cookies and Cane's Study Break",
+  // },
+  {
+    url: 'images/events/IEEE-UPP.jpg',
+    caption: 'IEEE UPP Presentation!'
+  },
+  {
+    url: 'images/events/break3.jpg',
+    caption: 'Halloween Study Break'
+  },
+  {
+    url: 'images/events/intel-coffee.jpg',
+    caption: 'Intel Coffee Chat!'
+  },
+  {
+    url: 'images/events/discover-course-6.JPG',
+    caption: 'Discover Course 6'
+  },
+  {
+    url: 'images/events/Armando-Solar-Lezama.jpg',
+    caption: 'Dinner with Professor Armando Solar-Lezama!'
   }
+  // {
+  //   url: 'images/events/Hal-Abelson.jpg',
+  //   caption: 'Dinner with Professor Hal Abelson!'
+  // },
+  // {
+  //   url: 'images/events/big-little-mixer.jpg',
+  //   caption: 'Big Little Mixer!'
+  // },
 ];
 
 
@@ -45,13 +69,12 @@ function EventShowcase(props) {
   
   return (
     <div className="eventsc-container">
-      <Fade autoPlay={true} duration={7000} transitionDuration={500} indicators={indicators}
-            prevArrow={<a className="arrow">&#10094;</a>} easing='ease'
+      <Fade autoPlay={true} duration={5500} transitionDuration={500} indicators={indicators}
+            prevArrow={<a className="arrow">&#10094;</a>}
             nextArrow={<a className="arrow">&#10095;</a>}>
         {slideImages.map((img: {url: string, caption: string}, index: number) => (
           <div key={index}>
-            <div className="eventsc-content" role="img" alt={img.caption}
-                 style={{ backgroundImage: `url(${img.url})` }}></div>
+            <img src={img.url} className="eventsc-img" alt={img.caption} />
             <p className="caption">{ img.caption }</p>
           </div>
         ))}

@@ -3,15 +3,15 @@ import './Newsletters.css';
 
 
 const newslettersList = [
-  ['March', '2023', 'newsletter/newsletter-march-23.pdf'],
   ['May', '2023', 'newsletter/newsletter-may-23.pdf'],
-  [<small>November</small>, '2023', 'newsletter/newsletter-november-23.html']
+  [<small>November</small>, '2023', 'newsletter/newsletter-november-23.html'],
+  [<small>February</small>, '2024', 'newsletter/newsletter-february-24.html']
 ]
 
 
 const Newsletters = () => {
   return (
-    <div className="row justify-content-around my-2 gx-0">
+    <div className="d-flex newsletter-container">
 
       {newslettersList.map(([month, year, file]) => (
         <div className="portfolio-item">

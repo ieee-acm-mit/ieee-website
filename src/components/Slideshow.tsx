@@ -7,7 +7,8 @@ import './ImageSliders.css';
 const Slideshow = (props) => {
     let slideImages = props.slideImages;
     return (
-      <Fade autoPlay={true} duration={6500} indicators={true}>
+      <Fade autoPlay={true} duration={6500} indicators={true}
+            arrows={false} pauseOnHover={false}>
         {slideImages.map((img: {url: string, caption: string}, index: number) => (
           <div key={index}>
             <div className="slider-content" role="img" alt={img.caption}

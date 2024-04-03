@@ -5,11 +5,11 @@
 
 .slider-content {
   position: relative;
-  display: flex;
+  display: flex;    /* TODO: vendor prefixes for flex */
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 75vh;
+  height: 85vh;
   background-position: center;
 }
 
@@ -17,7 +17,7 @@
   text-align: center;
   color: white;
   z-index: 2;
-  padding: 0 5rem;
+  padding: 0 4.5rem;
   max-width: 600px;
 }
 
@@ -28,7 +28,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.58);
 }
 
 .slider-content .caption h1 {
@@ -42,20 +42,29 @@
 
 /* ------ For EventShowcase ------ */
 
-.eventsc-content {
+.eventsc-container {
+  margin: 1rem 0;
+}
+
+.eventsc-img {
   height: 60vh;
-  max-width: 100%;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  -o-object-position: center;
 }
 
 .eventsc-container .caption {
   width: 100%;
   text-align: center;
   background-color: var(--main-theme-color);
-  padding: 13px 0;
+  padding: 14px 1.2rem;
   margin: 0 !important;
   color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: scroll;
 }
 
 /* Used by react-slideshow-image */
@@ -67,7 +76,15 @@
 .eventsc-container .indicator {
   opacity: 0.6;
   cursor: pointer;
-  max-width: 10%;
+  height: 12vw;
+  max-height: 3.5rem;
+  width: 10%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.eventsc-container .indicator.active, .eventsc-container .indicator:hover {
+  opacity: 1;
 }
 
 .eventsc-container .arrow {
@@ -81,6 +98,6 @@
   -webkit-user-select: none;
 }
 
-.eventsc-container .indicator.active, .eventsc-container .indicator:hover {
-  opacity: 1;
+.eventsc-container .arrow:hover {
+  color: #d0d0d0;
 }
