@@ -1,7 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import '../css/NavBar.css';
-import "../../css/bootstrap.min.css";
-import "../../css/tracker.css";
 import Logo from '../../images/logo_w_background.png';
 
 export function NavBar() {

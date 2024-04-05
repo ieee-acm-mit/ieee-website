@@ -3,7 +3,7 @@ import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import TeamPage from './pages/TeamPage';
-// import PortfolioPage from './pages/PortfolioPage';
+import './App.css';
 
 const App: React.FC = () => {
   return (
