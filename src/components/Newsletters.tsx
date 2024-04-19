@@ -1,5 +1,6 @@
 import React from 'react';
 import './Newsletters.css';
+import '../css/portfolio.css';
 
 
 const newslettersList = [

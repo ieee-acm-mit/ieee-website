@@ -1,10 +1,11 @@
 import React from 'react';
 import EventsShowcase from '../components/EventShowcase';
+import Subcommittees from '../components/Subcommittees';
 
 
 const AboutPage: React.FC = () => {
-  return (
-    <div className="container">
+  return <>
+    <div className="content-section container">
       <div>
         <div>
           The MIT IEEE/ACM Club represents the student branch for two
@@ -37,9 +38,14 @@ const AboutPage: React.FC = () => {
           Tech Talks with Industry Professionals <br />
         </div>
       </div>
-      <EventsShowcase />
+
+      <EventsShowcase />  {/* change: should not be here */}
     </div>
-  );
+
+    <div className="content-section" style={{ maxWidth: '840px' }}>
+      <Subcommittees />
+    </div>
+  </>;
 };
 
 export default AboutPage;

@@ -1,0 +1,76 @@
+.portfolio-item .portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item .portfolio-thumb img {
+    width: 100%;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay {
+    background-color: var(--main-theme-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay p {
+    font-size: 0.72em;
+    margin: 0;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay a {
+    font-size: 1.5em;
+    color: white;
+}
+
+@media screen and (min-width: 500px) {
+    .portfolio-item .portfolio-thumb .portfolio-overlay {
+        font-size: 1.3rem;
+    }
+
+    .newsletter-text {
+        font-size: 22px;
+    }
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay a.expand {
+    margin-top: 15px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+.portfolio-item .portfolio-thumb .portfolio-overlay a.expand i {
+    line-height: 36px;
+}
+
+.portfolio-item .portfolio-thumb:hover .portfolio-overlay {
+    opacity: 1;
+    visibility: visible;
+}
