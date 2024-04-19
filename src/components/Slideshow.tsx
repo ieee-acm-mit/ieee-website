@@ -15,7 +15,9 @@ const Slideshow = (props) => {
                  style={{ backgroundImage: `url(${img.url})` }}>
               <div className="overlay"></div>
               <div className="container caption">
-                <h1>MIT IEEE/ACM</h1>
+                <h1 className="animate__animated animate__tada">
+                  MIT IEEE/ACM
+                </h1>
                 <p>{ img.caption }</p>
               </div>
             </div>

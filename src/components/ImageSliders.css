@@ -17,7 +17,7 @@
   text-align: center;
   color: white;
   z-index: 2;
-  padding: 0 4.5rem;
+  padding: 0 4rem;
   max-width: 600px;
 }
 
@@ -28,7 +28,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.58);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .slider-content .caption h1 {
@@ -38,6 +38,10 @@
   border-bottom: 1px solid white;
   padding-bottom: 10px;
   font-weight: 700;
+}
+
+.slider-content .caption p {
+  font-size: 1.05rem;
 }
 
 /* ------ For EventShowcase ------ */

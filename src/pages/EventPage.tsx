@@ -4,7 +4,7 @@ import EventShowcase from '../components/EventShowcase';
 
 const EventPage: React.FC = () => {
   return <>
-    <div style={{ maxWidth: '840px', margin: 'auto' }}>
+    <div style={{ maxWidth: '850px', margin: 'auto' }}>
       <EventShowcase />
     </div>
 

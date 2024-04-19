@@ -1,5 +1,8 @@
 .team-photo {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
 }
 
 .team-member {

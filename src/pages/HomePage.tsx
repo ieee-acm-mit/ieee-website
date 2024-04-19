@@ -102,7 +102,7 @@ const HomePage: React.FC = () => {
       </div>
     </div>
 
-    <div className="content-section" style={{ maxWidth: '800px' }}>
+    <div className="content-section" style={{ maxWidth: '840px' }}>
       <h2>Photos</h2>
       <EventShowcase />
     </div>
