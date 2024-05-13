@@ -1,7 +1,8 @@
 .idea
 secrets.json
 
-**/node_modules
+node_modules/
+dist/
 
 # Ignore Mac system files
 .DS_Store
