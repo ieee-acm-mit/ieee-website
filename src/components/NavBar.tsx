@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import '../css/navbar.css';
-import Logo from '../../images/logo_w_background.png';
+import Logo from '/images/logo_w_background.png';
 
 
 function NavBar() {

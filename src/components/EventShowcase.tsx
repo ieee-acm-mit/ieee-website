@@ -1,59 +1,60 @@
 import { Fade } from 'react-slideshow-image';
 import "./ImageSliders.css";
+const photos = import.meta.glob('/images/events/*', {eager: true, as: 'url'});
 
 
 // Default event slides. Slide on Home Page includes three additional images.
 export const eventSlides = [
   {
-    url: 'images/events/tesla.jpg',
+    url: '/images/events/tesla.jpg',
     caption: 'Networking event with Tesla'
   },
   {
-    url: 'images/events/break2.JPG',
+    url: '/images/events/break2.jpg',
     caption: 'Cookies and Cocoa Study Break!'
   },
   {
-    url: 'images/events/Leslie-Kaelbling.jpeg',
+    url: '/images/events/Leslie-Kaelbling.jpeg',
     caption: 'Dinner with Professor Leslie Kaelbling!'
   },
   {
-    url: 'images/events/URTC-2023.jpeg',
+    url: '/images/events/URTC-2023.jpeg',
     caption: 'MIT IEEE Undergrad Research Tech Conference 2023'
   },
   {
-    url: 'images/events/Tom-Leighton.jpeg',
+    url: '/images/events/Tom-Leighton.jpeg',
     caption: 'On Life @ MIT and Akamai with Professor Tom Leighton'
   },
   // {
-  //   url: 'images/events/break1.jpg',
+  //   url: '/images/events/break1.jpg',
   //   caption: "Cookies and Cane's Study Break",
   // },
   {
-    url: 'images/events/IEEE-UPP.jpg',
+    url: '/images/events/IEEE-UPP.jpg',
     caption: 'IEEE UPP Presentation!'
   },
   {
-    url: 'images/events/break3.jpg',
+    url: '/images/events/break3.jpg',
     caption: 'Halloween Study Break'
   },
   {
-    url: 'images/events/intel-coffee.jpg',
+    url: '/images/events/intel-coffee.jpg',
     caption: 'Intel Coffee Chat!'
   },
   {
-    url: 'images/events/discover-course-6.JPG',
+    url: '/images/events/discover-course-6.jpg',
     caption: 'Discover Course 6'
   },
   {
-    url: 'images/events/Armando-Solar-Lezama.jpg',
+    url: '/images/events/Armando-Solar-Lezama.jpg',
     caption: 'Dinner with Professor Armando Solar-Lezama!'
   }
   // {
-  //   url: 'images/events/Hal-Abelson.jpg',
+  //   url: '/images/events/Hal-Abelson.jpg',
   //   caption: 'Dinner with Professor Hal Abelson!'
   // },
   // {
-  //   url: 'images/events/big-little-mixer.jpg',
+  //   url: '/images/events/big-little-mixer.jpg',
   //   caption: 'Big Little Mixer!'
   // },
 ];
@@ -61,7 +62,7 @@ export const eventSlides = [
 
 const indicators = (index: number) => {
   const img = eventSlides[index];
-  return <img src={img.url} className="indicator" alt={img.caption} />;
+  return <img src={photos[img.url]} className="indicator" alt={img.caption} />;
 }
 
 function EventShowcase(props) {
@@ -69,12 +70,13 @@ function EventShowcase(props) {
   
   return (
     <div className="eventsc-container">
-      <Fade autoPlay={true} duration={5500} transitionDuration={500} indicators={indicators}
+      <Fade autoplay={true} duration={5500} transitionDuration={500} indicators={indicators}
             prevArrow={<a className="arrow">&#10094;</a>}
             nextArrow={<a className="arrow">&#10095;</a>}>
         {slideImages.map((img: {url: string, caption: string}, index: number) => (
           <div key={index}>
-            <img src={img.url} className="eventsc-img" alt={img.caption} />
+            <img src={photos[img.url]} className="eventsc-img"
+                 alt={img.caption} loading="lazy" />
             <p className="caption">{ img.caption }</p>
           </div>
         ))}

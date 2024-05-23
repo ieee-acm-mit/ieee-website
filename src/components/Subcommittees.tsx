@@ -1,11 +1,12 @@
 import '../css/portfolio.css'
+const photos = import.meta.glob('/images/subcomm/*', {eager: true, as: 'url'});
 
 
 const subcomList = [
   {
     name: 'URTC',
     link: 'https://urtc.mit.edu/',
-    photo: 'urtc.png',
+    photo: '/images/subcomm/urtc.png',
     description: `As an IEEE official conference, URTC brings undergrads to
                   publish, present and discuss their solutions, research or
                   case studies to advance technology.`
@@ -13,7 +14,7 @@ const subcomList = [
   {
     name: 'Voltage',
     link: 'https://voltage.scripts.mit.edu/voltage/index.html',
-    photo: 'voltage.png',
+    photo: '/images/subcomm/voltage.png',
     description: `Voltage organizes events for the undergraduate EE community
                   that allow students, faculty, alumni, and industry to interact.`
     /* We aim to make being 6-1 more than a major, but a community. */
@@ -21,7 +22,7 @@ const subcomList = [
   {
     name: 'Women in EECS',
     link: 'http://womenineecs.mit.edu/',
-    photo: 'wieecs.png',
+    photo: '/images/subcomm/wieecs.png',
     description: `Our mission is to build a community for women in EECS that
                   supports, encourages, and empowers them to succeed.`
   }
@@ -37,7 +38,7 @@ const Subcommittees = () => (
       {subcomList.map((subcom) => (
         <div className="portfolio-item col-md-4 col-sm-6">
           <div className="portfolio-thumb">
-            <img src={'images/subcommittees/' + subcom.photo} alt="" />
+            <img src={photos[subcom.photo]} alt="" />
             <div className="portfolio-overlay">
               <h3>{subcom.name}</h3>
               <p>{subcom.description}</p>

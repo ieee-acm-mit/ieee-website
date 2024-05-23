@@ -1,20 +1,24 @@
 import React from 'react';
 import Slideshow from '../components/Slideshow';
-import Newsletters from '../components/Newsletters';
+import Newsletters, { newsLatest } from '../components/Newsletters';
 import EventShowcase, { eventSlides } from '../components/EventShowcase';
 import "../css/HomePage.css";
+import teslaPhoto from '/images/events/tesla.jpg';
+import LKBPhoto from '/images/events/Leslie-Kaelbling.jpeg';
+import break2 from '/images/events/break2.jpg';
+import teamPhoto from '/images/exec/group_photo.jpeg';
 
 
 const introSlides = [
   {
-    url: 'images/events/Tom-Leighton.jpeg',
+    url: '/images/events/Tom-Leighton.jpeg',
     caption: (<p>
                 At MIT IEEE/ACM, our mission is to support a tight-knit
                 community among the students and faculty in the EECS Department.
               </p>)
   },
   {
-    url: 'images/events/break1.jpg',
+    url: '/images/events/break1.jpg',
     caption: (<small>
                 We connect freshmen to upperclassmen, undergrads to faculty,
                 and applicants to prospective internships. <br/>
@@ -24,7 +28,7 @@ const introSlides = [
               </small>)
   },
   {
-    url: 'images/events/Hal-Abelson.jpg',
+    url: '/images/events/Hal-Abelson.jpg',
     caption: (<small>
                 Our highlights include:
                 <br/>
@@ -58,7 +62,7 @@ const HomePage: React.FC = () => {
         <div className="row">
           <div className="col">
             <div className="home-event card">
-              <img src="images/events/tesla.jpg" alt="Industry Networking"/>
+              <img src={teslaPhoto} alt="Industry Networking"/>
               <div className="home-events-caption"
                    style={{ backgroundColor: '#EDAE00' }}>
                 Industry Networking
@@ -68,7 +72,7 @@ const HomePage: React.FC = () => {
 
           <div className="col">
             <div className="home-event card">
-              <img src="images/events/Leslie-Kaelbling.jpeg" alt="Faculty Connection"/>
+              <img src={LKBPhoto} alt="Faculty Connection"/>
               <div className="home-events-caption"
                    style={{ backgroundColor: '#FB6542' }}>
                 Faculty Connection
@@ -78,7 +82,7 @@ const HomePage: React.FC = () => {
           
           <div className="col">
             <div className="home-event card">
-              <img src="images/events/break2.jpg" alt="Study Breaks"/>
+              <img src={break2} alt="Study Breaks"/>
               <div className="home-events-caption"
                    style={{ backgroundColor: '#2696ff' }}>
                 Study Breaks
@@ -142,7 +146,7 @@ const HomePage: React.FC = () => {
       </p>
 
       <img
-        src="images/exec/group_photo.jpeg"
+        src={teamPhoto}
         className="team-photo mb-4"
         alt="team photo"
         style={{ maxWidth: '600px' }}
