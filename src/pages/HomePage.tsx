@@ -158,7 +158,7 @@ const HomePage: React.FC = () => {
         by connecting freshmen to upperclassmen, undergraduates to
         faculty, and applicants to prospective internships.<br /><br />
       </p>
-      <a href="/about" className="mx-4">
+      <a href="/team" className="mx-4">
         Meet Our Exec &nbsp;<i className="fa-solid fa-chevron-right"></i>
       </a>
       <a href="/about" className="mx-4">

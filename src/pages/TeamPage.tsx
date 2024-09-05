@@ -4,6 +4,64 @@ import teamPhoto from '/images/exec/group_photo.jpeg';
 const photos = import.meta.glob('/images/exec/*', {eager: true, as: 'url'});
 
 
+const execList = [
+  {
+    name: 'Julianna Schneider',
+    img: '/images/exec/JuliannaSchneider.jpg',
+    role: 'President',
+    class: 2026
+  },
+  {
+    name: 'Elisa Xia',
+    img: '/images/exec/ElisaXia.png',
+    role: 'President',
+    class: 2026
+  },
+  {
+    name: 'Lucia Wang',
+    img: '/images/exec/LuciaWang.jpg',
+    role: 'Secretary',
+    class: 2026
+  },
+  {
+    name: 'Maggie Yao',
+    img: '/images/exec/MaggieYao.png',
+    role: 'Treasurer',
+    class: 2026
+  },
+  {
+    name: 'Ananya Kulshrestha',
+    img: '/images/exec/AnanyaKulshrestha.jpg',
+    role: 'External Relations',
+    class: 2026
+  },
+  {
+    name: 'Rohan Bosworth',
+    img: '/images/exec/RohanBosworth.JPG',
+    role: 'External Relations',
+    class: 2026
+  },
+  {
+    name: 'Jophy Ye',
+    img: '/images/exec/JophyYe.jpg',
+    role: 'Faculty-Student Relations',
+    class: 2027
+  },
+  {
+    name: 'Jessica Kim',
+    img: '/images/exec/JessicaKim.jpeg',
+    role: 'Publicity Chair',
+    class: 2027
+  },
+  {
+    name: 'Amanda Hulver',
+    img: '/images/exec/AmandaHulver.jpg',
+    role: 'Social Chair',
+    class: 2027
+  },
+]
+
+
 const TeamPage: React.FC = () => {
   return (
     <div>
@@ -18,237 +76,20 @@ const TeamPage: React.FC = () => {
 
         <div className="row">
 
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/AnnaYang.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Anna Yang</h3>
-                <span>Co-President</span>
-                <span>class of 2025</span>
+          {execList.map((exec) => (
+            <div className="team-member col-6 col-sm-4 col-md-3">
+              <div className="member-thumb">
+                <img src={photos[exec.img]} alt="" />
+                <div className="team-overlay">
+                  <h3><big>{exec.name}</big></h3>
+                  <span>{exec.role}</span>
+                  <span>class of {exec.class}</span>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
 
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/JenniferZhang.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Jennifer Zhang</h3>
-                <span>Co-President</span>
-                <span>class of 2025</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/AnushkaN.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Anushka Naiknaware</h3>
-                <span>Secretary</span>
-                <span>class of 2025</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/RishabParthasarathy.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Rishab Parthasarathy</h3>
-                <span>Treasurer</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/AlexisYi.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Alexis Yi</h3>
-                <span>Treasurer</span>
-                <span>class of 2025</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/maskedTim.jpeg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Anika Puri</h3>
-                <span>Treasurer</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/LuciaWang.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Lucia Wang</h3>
-                <span>Social Chair</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/EmilyChen.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Emily Chen</h3>
-                <span>Social Chair</span>
-                <span>class of 2025</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/YiqingDu.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Yiqing Du</h3>
-                <span>Publicity Chair</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/JessicaKim.jpeg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Jessica Kim</h3>
-                <span>Publicity Chair</span>
-                <span>class of 2027</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/ElisaXia.png"]} alt="" />
-              <div className="team-overlay">
-                <h3>Elisa Xia</h3>
-                <span>External Relations</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/cassandra.jpeg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Cassandra He</h3>
-                <span>External Relations</span>
-                <span>class of 2025</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/MargaretWang.png"]} alt="" />
-              <div className="team-overlay">
-                <h3>Margaret Wang</h3>
-                <span>Faculty-Student Relations</span>
-                <span>class of 2025</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/JuliannaSchneider.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Julianna Schneider</h3>
-                <span>Faculty-Student Relations</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/RohanBosworth.JPG"]} alt="" />
-              <div className="team-overlay">
-                <h3>Rohan Bosworth</h3>
-                <span>Faculty-Student Relations</span>
-                <span>class of 2027</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/JophyYe.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Jophy Ye</h3>
-                <span>Webmaster</span>
-                <span>class of 2027</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/AnanyaKulshrestha.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Ananya Kulshrestha</h3>
-                <span>Webmaster</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/YilinLi.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Yilin Li</h3>
-                <span>Historian</span>
-                <span>class of 2025</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/MaggieYao.png"]} alt="" />
-              <div className="team-overlay">
-                <h3>Maggie Yao</h3>
-                <span>Historian</span>
-                <span>class of 2026</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/JustinBuonato.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Justin Buonato</h3>
-                <span>Freshman Representative</span>
-                <span>class of 2027</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="team-member col-6 col-sm-4 col-md-3">
-            <div className="member-thumb">
-              <img src={photos["/images/exec/AmandaHulver.jpg"]} alt="" />
-              <div className="team-overlay">
-                <h3>Amanda Hulver</h3>
-                <span>Freshman Representative</span>
-                <span>class of 2027</span>
-              </div>
-            </div>
-          </div>
-
+          {/* TODO: update the following */}
           <div className="team-member col-6 col-sm-4 col-md-3">
             <div className="member-thumb">
               <img src={photos["/images/exec/sabrina_meng.jpg"]} alt="" />
