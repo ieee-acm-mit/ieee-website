@@ -1,0 +1,11 @@
+# The web_scripts directory contains dynamic content for 
+# scripts.mit.edu, and should not be accessed via web.mit.edu.
+# 
+# The .htaccess file should be pushed to the remote (server's) web_scripts
+# directory (along with other built assets) in order to setup path rewrite.
+# More at https://stackoverflow.com/questions/44038456/how-to-setup-apache-server-for-react-route.
+
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
