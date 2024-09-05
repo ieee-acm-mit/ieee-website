@@ -120,7 +120,7 @@ const HomePage: React.FC = () => {
         photos of past events too. Stay tuned!
       </p>
 
-      <a target="_blank" href="newsletter/newsletter-november-23.html">
+      <a target="_blank" href={newsLatest}>
         <button className='button button-primary'>
           <b>Our Most Recent Newsletter</b>
         </button>
