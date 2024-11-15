@@ -7,7 +7,7 @@ const photos = import.meta.glob('/images/exec/*', {eager: true, as: 'url'});
 const execList = [
   {
     name: 'Julianna Schneider',
-    img: '/images/exec/JuliannaSchneider.jpg',
+    img: '/images/exec/JuliaSchneider.jpg',
     role: 'President',
     class: 2026
   },
@@ -48,6 +48,12 @@ const execList = [
     class: 2027
   },
   {
+    name: 'Nikita Agrawal',
+    img: '/images/exec/NikitaAgrawal.jpg',
+    role: 'Faculty-Student Relations',
+    class: 2028
+  },
+  {
     name: 'Jessica Kim',
     img: '/images/exec/JessicaKim.jpeg',
     role: 'Publicity Chair',
@@ -58,6 +64,90 @@ const execList = [
     img: '/images/exec/AmandaHulver.jpg',
     role: 'Social Chair',
     class: 2027
+  },
+  {
+    name: 'Cassandra Tafuri Del Vecchio',
+    img: '/images/exec/CassandraTafuriDelVecchio.jpg',
+    role: 'Social Chair',
+    class: 2028
+  },
+  {
+    name: 'Mary Lee',
+    img: '/images/exec/MaryLee.jpg',
+    role: 'Webmaster',
+    class: 2028
+  },
+  {
+    name: 'Leo Kana',
+    img: '/images/exec/LeoKana.jpeg',
+    role: 'Webmaster',
+    class: 2028
+  },
+  {
+    name: 'Sabrina Do',
+    img: '/images/exec/SabrinaDo.jpg',
+    role: 'WiEECS Co-President',
+    class: 2026
+  },
+  {
+    name: 'Shiqi Cheng',
+    img: '/images/exec/ShiqiCheng.png',
+    role: 'WiEECS Co-President',
+    class: 2027
+  },
+  {
+    name: 'Lasya Balachandran',
+    img: '/images/exec/LasyaBalachandran.jpeg',
+    role: 'URTC Co-Chair',
+    class: 2025
+  },
+  {
+    name: 'Jie Wang',
+    img: '/images/exec/JieWang.jpeg',
+    role: 'URTC Co-Chair',
+    class: 'Postdoc'
+  },
+  {
+    name: 'Srilekha Mamidala',
+    img: '/images/exec/maskedTim.jpeg',
+    role: 'Treasurer',
+    class: 2028
+  },
+  {
+    name: 'Sharvaa Selvan',
+    img: '/images/exec/SharvaaSelvan.jpg',
+    role: 'Publicity Chair',
+    class: 2027
+  },
+  {
+    name: 'Jocelyn Zhang',
+    img: '/images/exec/JocelynZhang.jpeg',
+    role: 'Freshmen Representative',
+    class: 2028
+  },
+  {
+    name: 'Merey Termirzinova',
+    img: '/images/exec/maskedTim.jpeg',
+    role: 'Freshmen Representative',
+    class: 2028
+  },
+  {
+    name: 'Richard Lian',
+    img: '/images/exec/maskedTim.jpeg',
+    role: 'Freshmen Representative',
+    class: 2028
+  },
+  {
+    name: 'Michael Yang',
+    img: '/images/exec/maskedTim.jpeg',
+    role: 'Historian',
+    class: 2028
+  },
+  {
+    name: 'Rebecca Wang',
+    img: '/images/exec/RebeccaWang.jpg',
+    role: 'Historian',
+    class: 2028
   },
 ]
 
@@ -75,7 +165,6 @@ const TeamPage: React.FC = () => {
         </div>
 
         <div className="row">
-
           {execList.map((exec) => (
             <div className="team-member col-6 col-sm-4 col-md-3">
               <div className="member-thumb">
@@ -89,7 +178,7 @@ const TeamPage: React.FC = () => {
             </div>
           ))}
 
-          {/* TODO: update the following */}
+          {/* TODO: update the following
           <div className="team-member col-6 col-sm-4 col-md-3">
             <div className="member-thumb">
               <img src={photos["/images/exec/sabrina_meng.jpg"]} alt="" />
@@ -100,7 +189,7 @@ const TeamPage: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="team-member col-6 col-sm-4 col-md-3">
             <div className="member-thumb">
               <img src={photos["/images/exec/meenakshi_singh.jpg"]} alt="" />
@@ -111,7 +200,7 @@ const TeamPage: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="team-member col-6 col-sm-4 col-md-3">
             <div className="member-thumb">
               <img src={photos["/images/exec/maskedTim.jpeg"]} alt="" />
@@ -120,9 +209,9 @@ const TeamPage: React.FC = () => {
                 <span>URTC Co-chair</span>
                 <span>class of 2024</span>
               </div>
-            </div>            
+            </div>
           </div>
-          
+
           <div className="team-member col-6 col-sm-4 col-md-3">
             <div className="member-thumb">
               <img src={photos["/images/exec/EllieMontemayor.png"]} alt="" />
@@ -133,7 +222,7 @@ const TeamPage: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="team-member col-6 col-sm-4 col-md-3">
             <div className="member-thumb">
               <img src={photos["/images/exec/maskedTim.jpeg"]} alt="" />
@@ -154,7 +243,7 @@ const TeamPage: React.FC = () => {
                 <span>className of 2025</span>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
 
       </div>
