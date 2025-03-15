@@ -35,24 +35,24 @@ h2{
   font-weight: 600;
   text-transform: uppercase;
   border-bottom: 1px solid #444444;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
 a {
-color: #ec523f;
-text-decoration: none;
--webkit-transition: all 200ms ease-in-out;
--moz-transition: all 200ms ease-in-out;
-transition: all 200ms ease-in-out;
+  color: #ec523f;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 a:hover {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 a:active {
   color: #c63b27;
-text-decoration: none;
+  text-decoration: none;
 }
 /* From bootstrap */
 @media screen and (min-width: 1200px) {
