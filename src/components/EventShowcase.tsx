@@ -42,7 +42,7 @@ export const eventSlides = [
     caption: 'Intel Coffee Chat!'
   },
   {
-    url: '/images/events/discover-course-6.jpg',
+    url: '/images/events/discover-course-6.png',
     caption: 'Discover Course 6'
   },
   {

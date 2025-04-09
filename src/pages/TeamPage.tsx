@@ -13,7 +13,7 @@ const execList = [
   },
   {
     name: 'Elisa Xia',
-    img: '/images/exec/ElisaXia.png',
+    img: '/images/exec/ElisaXia.jpg',
     role: 'President',
     class: 2026
   },
@@ -25,9 +25,15 @@ const execList = [
   },
   {
     name: 'Maggie Yao',
-    img: '/images/exec/MaggieYao.png',
+    img: '/images/exec/MaggieYao.jpg',
     role: 'Treasurer',
     class: 2026
+  },
+  {
+    name: 'Srilekha Mamidala',
+    img: '/images/exec/SrilekhaMamidala.jpg',
+    role: 'Treasurer',
+    class: 2028
   },
   {
     name: 'Ananya Kulshrestha',
@@ -37,9 +43,9 @@ const execList = [
   },
   {
     name: 'Rohan Bosworth',
-    img: '/images/exec/RohanBosworth.JPG',
+    img: '/images/exec/RohanBosworth.jpg',
     role: 'External Relations',
-    class: 2026
+    class: 2027
   },
   {
     name: 'Jophy Ye',
@@ -55,9 +61,15 @@ const execList = [
   },
   {
     name: 'Jessica Kim',
-    img: '/images/exec/JessicaKim.jpeg',
+    img: '/images/exec/maskedTim.jpeg',
     role: 'Publicity Chair',
     class: 2027
+  },
+  {
+    name: 'Mairin Castellano',
+    img: '/images/exec/MairinCastellano.jpg',
+    role: 'Publicity Chair',
+    class: 2028
   },
   {
     name: 'Amanda Hulver',
@@ -72,15 +84,51 @@ const execList = [
     class: 2028
   },
   {
+    name: 'Arielsie Li',
+    img: '/images/exec/ArielsieLi.jpg',
+    role: 'Social Chair',
+    class: 2028
+  },
+  {
     name: 'Mary Lee',
     img: '/images/exec/MaryLee.jpg',
     role: 'Webmaster',
     class: 2028
   },
   {
-    name: 'Leo Kana',
-    img: '/images/exec/LeoKana.jpeg',
+    name: 'Léo Kana',
+    img: '/images/exec/LeoKana.jpg',
     role: 'Webmaster',
+    class: 2028
+  },
+  {
+    name: 'Jocelyn Zhang',
+    img: '/images/exec/JocelynZhang.jpg',
+    role: 'Freshmen Representative',
+    class: 2028
+  },
+  {
+    name: 'Laurie Wang',
+    img: '/images/exec/LaurieWang.jpg',
+    role: 'Freshmen Representative',
+    class: 2028
+  },
+  {
+    name: 'Elyse Moores',
+    img: '/images/exec/ElyseMoores.jpg',
+    role: 'Freshmen Representative',
+    class: 2028
+  },
+  {
+    name: 'Michael Yang',
+    img: '/images/exec/MichaelYang.jpg',
+    role: 'Historian',
+    class: 2028
+  },
+  {
+    name: 'Rebecca Wang',
+    img: '/images/exec/maskedTim.jpeg',
+    role: 'Historian',
     class: 2028
   },
   {
@@ -106,48 +154,6 @@ const execList = [
     img: '/images/exec/JieWang.jpeg',
     role: 'URTC Co-Chair',
     class: 'Postdoc'
-  },
-  {
-    name: 'Srilekha Mamidala',
-    img: '/images/exec/maskedTim.jpeg',
-    role: 'Treasurer',
-    class: 2028
-  },
-  {
-    name: 'Sharvaa Selvan',
-    img: '/images/exec/SharvaaSelvan.jpg',
-    role: 'Publicity Chair',
-    class: 2027
-  },
-  {
-    name: 'Jocelyn Zhang',
-    img: '/images/exec/JocelynZhang.jpeg',
-    role: 'Freshmen Representative',
-    class: 2028
-  },
-  {
-    name: 'Merey Termirzinova',
-    img: '/images/exec/maskedTim.jpeg',
-    role: 'Freshmen Representative',
-    class: 2028
-  },
-  {
-    name: 'Richard Lian',
-    img: '/images/exec/maskedTim.jpeg',
-    role: 'Freshmen Representative',
-    class: 2028
-  },
-  {
-    name: 'Michael Yang',
-    img: '/images/exec/maskedTim.jpeg',
-    role: 'Historian',
-    class: 2028
-  },
-  {
-    name: 'Rebecca Wang',
-    img: '/images/exec/RebeccaWang.jpg',
-    role: 'Historian',
-    class: 2028
   },
 ]
 
