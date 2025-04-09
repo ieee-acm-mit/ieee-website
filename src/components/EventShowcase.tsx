@@ -10,7 +10,7 @@ export const eventSlides = [
     caption: 'Networking event with Tesla'
   },
   {
-    url: '/images/events/break2.jpg',
+    url: '/images/events/break2.jpeg',
     caption: 'Cookies and Cocoa Study Break!'
   },
   {
@@ -67,7 +67,7 @@ const indicators = (index: number) => {
 
 function EventShowcase(props) {
   let slideImages = props.slideImages || eventSlides;   // default to eventSlides
-  
+
   return (
     <div className="eventsc-container">
       <Fade autoplay={true} duration={5500} transitionDuration={500} indicators={indicators}

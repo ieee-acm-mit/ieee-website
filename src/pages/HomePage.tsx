@@ -5,8 +5,8 @@ import EventShowcase, { eventSlides } from '../components/EventShowcase';
 import "../css/HomePage.css";
 import teslaPhoto from '/images/events/tesla.jpg';
 import LKBPhoto from '/images/events/Leslie-Kaelbling.jpeg';
-import break2 from '/images/events/break2.jpg';
-import teamPhoto from '/images/exec/group_photo.jpeg';
+import break2 from '/images/events/break2.jpeg';
+import teamPhoto from '/images/exec/group_photo.jpg';
 
 
 const introSlides = [
@@ -45,7 +45,7 @@ const introSlides = [
 const HomePage: React.FC = () => {
   return <>
     <Slideshow slideImages={[ ...introSlides, ...eventSlides.slice(0, 4) ]}/>
-    
+
     <p className="content-section container px-5">
       The MIT IEEE/ACM Club represents the student branch for two professional
       international organizations, the Institute of Electrical and Electronics
@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="col">
             <div className="home-event card">
               <img src={break2} alt="Study Breaks"/>
@@ -134,8 +134,8 @@ const HomePage: React.FC = () => {
     </div>
 
     <div>
-      
-      
+
+
     </div>
 
     <div className="content-section">
