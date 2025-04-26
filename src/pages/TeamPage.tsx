@@ -61,7 +61,7 @@ const execList = [
   },
   {
     name: 'Jessica Kim',
-    img: '/images/exec/maskedTim.jpeg',
+    img: '/images/exec/JessicaKim.jpg',
     role: 'Publicity Chair',
     class: 2027
   },
@@ -127,7 +127,7 @@ const execList = [
   },
   {
     name: 'Rebecca Wang',
-    img: '/images/exec/maskedTim.jpeg',
+    img: '/images/exec/RebeccaWang.jpg',
     role: 'Historian',
     class: 2028
   },
