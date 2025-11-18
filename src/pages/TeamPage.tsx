@@ -6,28 +6,22 @@ const photos = import.meta.glob('/images/exec/*', {eager: true, as: 'url'});
 
 const execList = [
   {
-    name: 'Julianna Schneider',
-    img: '/images/exec/JuliaSchneider.jpg',
+    name: 'Rohan Bosworth',
+    img: '/images/exec/RohanBosworth.JPG',
     role: 'President',
-    class: 2026
+    class: 2027
   },
   {
-    name: 'Elisa Xia',
-    img: '/images/exec/ElisaXia.jpg',
+    name: 'Jophy Ye',
+    img: '/images/exec/JophyYe.jpg',
     role: 'President',
-    class: 2026
+    class: 2027
   },
   {
-    name: 'Lucia Wang',
-    img: '/images/exec/LuciaWang.jpg',
+    name: 'Cassandra Tafuri Del Vecchio',
+    img: '/images/exec/CassandraTafuriDelVecchio.jpg',
     role: 'Secretary',
-    class: 2026
-  },
-  {
-    name: 'Maggie Yao',
-    img: '/images/exec/MaggieYao.jpg',
-    role: 'Treasurer',
-    class: 2026
+    class: 2028
   },
   {
     name: 'Srilekha Mamidala',
@@ -36,50 +30,14 @@ const execList = [
     class: 2028
   },
   {
-    name: 'Ananya Kulshrestha',
-    img: '/images/exec/AnanyaKulshrestha.jpg',
-    role: 'External Relations',
-    class: 2026
-  },
-  {
-    name: 'Rohan Bosworth',
-    img: '/images/exec/RohanBosworth.jpg',
-    role: 'External Relations',
-    class: 2027
-  },
-  {
-    name: 'Jophy Ye',
-    img: '/images/exec/JophyYe.jpg',
-    role: 'Faculty-Student Relations',
-    class: 2027
-  },
-  {
-    name: 'Nikita Agrawal',
-    img: '/images/exec/NikitaAgrawal.jpg',
-    role: 'Faculty-Student Relations',
+    name: 'Rebecca Wang',
+    img: '/images/exec/RebeccaWang.jpg',
+    role: 'Treasurer',
     class: 2028
   },
   {
-    name: 'Jessica Kim',
-    img: '/images/exec/JessicaKim.jpg',
-    role: 'Publicity Chair',
-    class: 2027
-  },
-  {
-    name: 'Mairin Castellano',
-    img: '/images/exec/MairinCastellano.jpg',
-    role: 'Publicity Chair',
-    class: 2028
-  },
-  {
-    name: 'Amanda Hulver',
-    img: '/images/exec/AmandaHulver.jpg',
-    role: 'Social Chair',
-    class: 2027
-  },
-  {
-    name: 'Cassandra Tafuri Del Vecchio',
-    img: '/images/exec/CassandraTafuriDelVecchio.jpg',
+    name: 'Léo Kana',
+    img: '/images/exec/LeoKana.jpg',
     role: 'Social Chair',
     class: 2028
   },
@@ -90,70 +48,76 @@ const execList = [
     class: 2028
   },
   {
-    name: 'Mary Lee',
-    img: '/images/exec/MaryLee.jpg',
-    role: 'Webmaster',
-    class: 2028
+    name: 'Trish Zheng',
+    img: '/images/exec/TrishZheng.jpg',
+    role: 'Publicity Chair',
+    class: 2029
   },
   {
-    name: 'Léo Kana',
-    img: '/images/exec/LeoKana.jpg',
-    role: 'Webmaster',
-    class: 2028
-  },
-  {
-    name: 'Jocelyn Zhang',
-    img: '/images/exec/JocelynZhang.jpg',
-    role: 'Freshmen Representative',
+    name: 'Nikita Agrawal',
+    img: '/images/exec/NikitaAgrawal.jpg',
+    role: 'External Relations Chair',
     class: 2028
   },
   {
     name: 'Laurie Wang',
     img: '/images/exec/LaurieWang.jpg',
-    role: 'Freshmen Representative',
+    role: 'External Relations Chair',
     class: 2028
+  },
+  {
+    name: 'Jocelyn Zhang',
+    img: '/images/exec/JocelynZhang.jpg',
+    role: 'External Relations Chair',
+    class: 2028
+  },
+  {
+    name: 'Jessica Kim',
+    img: '/images/exec/JessicaKim.jpg',
+    role: 'Faculty Student Relations Chair',
+    class: 2027
   },
   {
     name: 'Elyse Moores',
     img: '/images/exec/ElyseMoores.jpg',
-    role: 'Freshmen Representative',
+    role: 'Faculty Student Relations Chair',
     class: 2028
   },
   {
-    name: 'Michael Yang',
-    img: '/images/exec/MichaelYang.jpg',
+    name: 'Jonas Sun',
+    img: '/images/exec/JonasSun.jpg',
+    role: 'Faculty Student Relations Chair',
+    class: 2029
+  },
+  {
+    name: 'Amanda Hulver',
+    img: '/images/exec/AmandaHulver.jpg',
     role: 'Historian',
-    class: 2028
-  },
-  {
-    name: 'Rebecca Wang',
-    img: '/images/exec/RebeccaWang.jpg',
-    role: 'Historian',
-    class: 2028
-  },
-  {
-    name: 'Sabrina Do',
-    img: '/images/exec/SabrinaDo.jpg',
-    role: 'WiEECS Co-President',
-    class: 2026
-  },
-  {
-    name: 'Shiqi Cheng',
-    img: '/images/exec/ShiqiCheng.png',
-    role: 'WiEECS Co-President',
     class: 2027
   },
   {
-    name: 'Lasya Balachandran',
-    img: '/images/exec/LasyaBalachandran.jpeg',
-    role: 'URTC Co-Chair',
-    class: 2025
+    name: 'Rojina Adhikari',
+    img: '/images/exec/RojinaAdhikari.jpg',
+    role: 'Freshmen Representative',
+    class: 2029
   },
   {
-    name: 'Jie Wang',
-    img: '/images/exec/JieWang.jpeg',
-    role: 'URTC Co-Chair',
-    class: 'Postdoc'
+    name: 'Maggie Zhang',
+    img: '/images/exec/MaggieZhang.jpg',
+    role: 'Freshmen Representative',
+    class: 2029
+  },
+  {
+    name: 'Megan Campbell',
+    img: '/images/exec/MeganCampbell.jpg',
+    role: 'Freshmen Representative',
+    class: 2029
+  },
+  {
+    name: 'Robert Chondro',
+    img: '/images/exec/RobertChondro.jpg',
+    role: 'Webmaster',
+    class: 2029
   },
 ]
 

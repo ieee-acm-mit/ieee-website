@@ -1,9 +1,9 @@
 import './Newsletters.css';
 import '../css/portfolio.css';
 import IEEELogo from '/images/newsletter/empty-ieee-logo.png';
-import apr7 from '/newsletter/newsletter-april-7.html?url';
-import mar17 from '/newsletter/newsletter-march-17.html?url';
-import apr14 from '/newsletter/newsletter-april-14.html?url';
+import feb24 from '/newsletter/newsletter-february-24.html?url';
+import mar24 from '/newsletter/newsletter-march-24.html?url';
+import apr24 from '/newsletter/newsletter-april-24.html?url';
 
 
 const newslettersList = [
@@ -11,17 +11,17 @@ const newslettersList = [
   //   month: <small>February</small>, year: '2024', path: feb24,
   // },
   {
-    month: 'March', year: '2025', path: mar17,
+    month: 'February', year: '2024', path: feb24,
   },
   {
-    month: 'April', year: '2025', path: apr7,
+    month: 'March', year: '2024', path: mar24,
   },
   {
-    month: 'April', year: '2025', path: apr14,
+    month: 'April', year: '2024', path: apr24,
   }
 ]
 
-const newsLatest = apr14;
+const newsLatest = apr24;
 
 
 const Newsletters = () => {
