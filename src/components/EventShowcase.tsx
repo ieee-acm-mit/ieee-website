@@ -6,16 +6,16 @@ const photos = import.meta.glob('/images/events/*', {eager: true, as: 'url'});
 // Default event slides. Slide on Home Page includes three additional images.
 export const eventSlides = [
   {
-    url: '/images/events/tesla.jpg',
-    caption: 'Networking event with Tesla'
+    url: '/images/events/FSR Corrigan-Gibbs Dinner.jpg',
+    caption: 'Faculty Student Dinner with Professor Henry Corrigan-Gibbs'
   },
   {
     url: '/images/events/break2.jpeg',
     caption: 'Cookies and Cocoa Study Break!'
   },
   {
-    url: '/images/events/Leslie-Kaelbling.jpeg',
-    caption: 'Dinner with Professor Leslie Kaelbling!'
+    url: '/images/events/FSR Bobu Dinner.jpg',
+    caption: 'Faculty Student Dinner with Professor Andreea Bobu!'
   },
   {
     url: '/images/events/URTC-2023.jpeg',
@@ -34,8 +34,8 @@ export const eventSlides = [
     caption: 'IEEE UPP Presentation!'
   },
   {
-    url: '/images/events/break3.jpg',
-    caption: 'Halloween Study Break'
+    url: '/images/events/halloween-study-break-2025.jpg',
+    caption: 'Halloween Study Break 2025'
   },
   {
     url: '/images/events/intel-coffee.jpg',
@@ -46,8 +46,8 @@ export const eventSlides = [
     caption: 'Discover Course 6'
   },
   {
-    url: '/images/events/Armando-Solar-Lezama.jpg',
-    caption: 'Dinner with Professor Armando Solar-Lezama!'
+    url: '/images/events/lotsync info session.jpg',
+    caption: 'Info Session with LotSync!'
   }
   // {
   //   url: '/images/events/Hal-Abelson.jpg',
