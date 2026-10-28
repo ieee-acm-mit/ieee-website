@@ -46,8 +46,8 @@ export const eventSlides = [
     caption: 'Discover Course 6'
   },
   {
-    url: '/images/events/lotsync info session.jpg',
-    caption: 'Info Session with LotSync!'
+    url: '/images/events/rox_game_night.JPG',
+    caption: 'Game Night with Rox!'
   }
   // {
   //   url: '/images/events/Hal-Abelson.jpg',
