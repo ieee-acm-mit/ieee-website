@@ -6,6 +6,14 @@ const photos = import.meta.glob('/images/events/*', {eager: true, as: 'url'});
 // Default event slides. Slide on Home Page includes three additional images.
 export const eventSlides = [
   {
+    url: '/images/events/gbm_1_2627.jpeg',
+    caption: 'General Body Meeting!'
+  },
+  {
+    url: '/images/events/rox_game_night.JPG',
+    caption: 'Game Night with Rox!'
+  },
+  {
     url: '/images/events/FSR Corrigan-Gibbs Dinner.jpg',
     caption: 'Faculty Student Dinner with Professor Henry Corrigan-Gibbs'
   },
@@ -33,10 +41,10 @@ export const eventSlides = [
     url: '/images/events/IEEE-UPP.jpg',
     caption: 'IEEE UPP Presentation!'
   },
-  {
-    url: '/images/events/halloween-study-break-2025.jpg',
-    caption: 'Halloween Study Break 2025'
-  },
+  // {
+  //   url: '/images/events/halloween-study-break-2025.jpg',
+  //   caption: 'Halloween Study Break 2025'
+  // },
   {
     url: '/images/events/intel-coffee.jpg',
     caption: 'Intel Coffee Chat!'
@@ -45,10 +53,7 @@ export const eventSlides = [
     url: '/images/events/discover-course-6.png',
     caption: 'Discover Course 6'
   },
-  {
-    url: '/images/events/rox_game_night.JPG',
-    caption: 'Game Night with Rox!'
-  }
+  
   // {
   //   url: '/images/events/Hal-Abelson.jpg',
   //   caption: 'Dinner with Professor Hal Abelson!'
