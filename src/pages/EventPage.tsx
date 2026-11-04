@@ -23,7 +23,8 @@ const EventPage: React.FC = () => {
       <p>Add our calendar to stay updated on the latest events!</p>
       <div className="calendar">
         <iframe
-          src="https://calendar.google.com/calendar/embed?title=MIT%20IEEE%2FACM%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York"
+          src="https://calendar.google.com/calendar/embed?src=71ff09f45515338a6615af38be8b1939512b2b03dc63cb748f0572c435d2c8c4%40group.calendar.google.com&ctz=America%2FNew_York"
+          // src="https://calendar.google.com/calendar/embed?title=MIT%20IEEE%2FACM%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=l43ijjmq28vt97abnijs443mhc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York"
           style={{ borderWidth: 0 }}
           width="100%"
           height="500px"

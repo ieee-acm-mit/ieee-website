@@ -33,7 +33,6 @@ const AboutPage: React.FC = () => {
           Discover Course 6 <br />
           Big-Little Events <br />
           Study Breaks and Game Nights <br />
-          Pset Parties <br />
           Fireside Chats with Professors <br />
           Tech Talks with Industry Professionals <br />
         </div>
