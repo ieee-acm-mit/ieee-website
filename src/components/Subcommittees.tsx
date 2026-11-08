@@ -21,7 +21,7 @@ const subcomList = [
   },
   {
     name: 'Women in EECS',
-    link: 'http://womenineecs.mit.edu/',
+    link: 'https://womenineecs.mit.edu/',
     photo: '/images/subcomm/wieecs.png',
     description: `Our mission is to build a community for women in EECS that
                   supports, encourages, and empowers them to succeed.`
@@ -36,7 +36,7 @@ const Subcommittees = () => (
     <div className="row">
 
       {subcomList.map((subcom) => (
-        <div className="portfolio-item col-md-4 col-sm-6">
+        <div key={subcom.name} className="portfolio-item col-md-4 col-sm-6">
           <div className="portfolio-thumb">
             <img src={photos[subcom.photo]} alt="" />
             <div className="portfolio-overlay">

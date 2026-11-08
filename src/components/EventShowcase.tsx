@@ -1,4 +1,5 @@
 import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 import "./ImageSliders.css";
 const photos = import.meta.glob('/images/events/*', {eager: true, query: "?url", import: "default"});
 
