@@ -1,5 +1,5 @@
 import '../css/portfolio.css'
-const photos = import.meta.glob('/images/subcomm/*', {eager: true, as: 'url'});
+const photos = import.meta.glob('/images/subcomm/*', {eager: true, query: "?url", import: "default"});
 
 
 const subcomList = [

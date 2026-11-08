@@ -1,7 +1,7 @@
 import React from 'react';
 import "../css/team.css";
 import teamPhoto from '/images/exec/group_photo.jpg';
-const photos = import.meta.glob('/images/exec/*', {eager: true, as: 'url'});
+const photos = import.meta.glob('/images/exec/*', {eager: true, query: "?url", import: "default"});
 
 
 const execList = [

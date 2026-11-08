@@ -1,6 +1,6 @@
 import { Fade } from 'react-slideshow-image';
 import "./ImageSliders.css";
-const photos = import.meta.glob('/images/events/*', {eager: true, as: 'url'});
+const photos = import.meta.glob('/images/events/*', {eager: true, query: "?url", import: "default"});
 
 
 // Default event slides. Slide on Home Page includes three additional images.
@@ -65,12 +65,12 @@ export const eventSlides = [
 ];
 
 
-const indicators = (index: number) => {
-  const img = eventSlides[index];
+const indicators = (index?: number) => {
+  const img = eventSlides[index ?? 0];
   return <img src={photos[img.url]} className="indicator" alt={img.caption} />;
 }
 
-function EventShowcase(props) {
+function EventShowcase(props: any) {
   let slideImages = props.slideImages || eventSlides;   // default to eventSlides
 
   return (

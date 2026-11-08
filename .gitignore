@@ -4,6 +4,8 @@ secrets.json
 node_modules/
 dist/
 
+.react-router
+
 # Ignore Mac system files
 .DS_Store
 .DS_stores

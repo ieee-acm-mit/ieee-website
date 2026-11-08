@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router";
 import { useState } from 'react';
 import '../css/navbar.css';
 import Logo from '/images/logo_w_background.png';

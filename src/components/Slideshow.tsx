@@ -1,11 +1,11 @@
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import './ImageSliders.css';
-const photos = import.meta.glob('/images/events/*', {eager: true, as: 'url'});
+const photos = import.meta.glob('/images/events/*', {eager: true, query: "?url", import: "default"});
 
 
 /** A generic image slider component, primarily used in the home page. */
-const Slideshow = (props) => {
+const Slideshow = (props: any) => {
     let slideImages = props.slideImages;
     return (
       <Fade autoplay={true} duration={6500} indicators={true}
